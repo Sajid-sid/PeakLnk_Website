@@ -1,0 +1,227 @@
+
+:root {
+  --ridge: #12263A;
+  --glacier: #E6EFF2;
+  --link: #17808A;
+  --summit: #F2B23E;
+  --paper: #FAFCFC;
+  --muted: #4A5B6A;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0px 15%;
+
+  background: var(--paper);
+
+  box-shadow: 0 2px 12px rgba(18, 38, 58, 0.08);
+
+  position: relative;
+  z-index: 1000;
+}
+
+
+/* =========================
+   LOGO
+========================= */
+
+.nav-left img {
+  width: 130px;
+  height: auto;
+  display: block;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.nav-right a {
+  text-decoration: none;
+  color: var(--ridge);
+
+  font-size: 15px;
+  font-weight: 500;
+
+  transition: color 0.2s ease;
+}
+
+.nav-right a:hover {
+  color: var(--link);
+}
+
+
+/* Active React Router Link */
+
+.nav-right a.active {
+  color: var(--link);
+}
+
+
+/* =========================
+   SOCIAL LINKS
+========================= */
+
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  margin-left: 8px;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 17px;
+}
+
+.social-links a:hover {
+  color: var(--link);
+}
+
+
+/* =========================
+   HAMBURGER
+========================= */
+
+.menu-toggle {
+  display: none;
+
+  background: transparent;
+  border: none;
+
+  color: var(--ridge);
+
+  font-size: 27px;
+
+  cursor: pointer;
+
+  padding: 5px;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+  .navbar {
+    padding: 16px 5%;
+  }
+
+  .nav-right {
+    gap: 18px;
+  }
+
+  .nav-right a {
+    font-size: 14px;
+  }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+  .navbar {
+    padding: 14px 5%;
+
+    flex-wrap: wrap;
+  }
+
+
+  /* Hamburger */
+
+  .menu-toggle {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  /* Navigation */
+
+  .nav-right {
+    display: none;
+
+    width: 100%;
+
+    flex-direction: column;
+    align-items: stretch;
+
+    gap: 0;
+
+    margin-top: 15px;
+
+    background: var(--paper);
+
+    border-top: 1px solid var(--glacier);
+  }
+
+
+  /* Open menu */
+
+  .nav-right.active {
+    display: flex;
+  }
+
+
+  /* Navigation links */
+
+  .nav-right > a {
+    padding: 14px 5px;
+
+    border-bottom: 1px solid var(--glacier);
+  }
+
+
+  /* Social links */
+
+  .social-links {
+    justify-content: center;
+
+    margin: 0;
+
+    padding: 18px 0;
+  }
+
+  .social-links a {
+    border: none;
+  }
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 480px) {
+
+  .nav-left img {
+    width: 125px;
+  }
+
+  .menu-toggle {
+    font-size: 24px;
+  }
+}
