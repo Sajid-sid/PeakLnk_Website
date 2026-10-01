@@ -371,3 +371,65 @@
   }
 
 }
+
+
+/* =====================================================
+   PROCESS HERO
+===================================================== */
+
+.process-hero {
+  position: relative;
+  min-height: 600px;
+
+  background-image:
+    linear-gradient(
+      rgba(0, 0, 0, 0.45),
+      rgba(0, 0, 0, 0.45)
+    ),
+    url("../assets/Process.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+}
+
+.process-hero-container {
+  position: relative;
+  z-index: 2;
+
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 30px;
+}
+
+.process-label {
+  display: inline-block;
+  margin-bottom: 18px;
+
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #ffffff;
+}
+
+.process-hero h1 {
+  margin: 0 0 20px;
+
+  font-size: clamp(42px, 6vw, 72px);
+  line-height: 1.05;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.process-hero p {
+  max-width: 700px;
+  margin: 0;
+
+  font-size: 18px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.9);
+}

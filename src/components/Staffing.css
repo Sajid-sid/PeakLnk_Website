@@ -785,3 +785,23 @@
     padding: 28px 24px;
   }
 }
+.staffing-hero {
+  position: relative;
+  min-height: 600px;
+  background-image: url("../assets/staffing-hero-overlay.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.staffing-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 1;
+}
+
+.staffing-hero-content {
+  position: relative;
+  z-index: 2;
+}
