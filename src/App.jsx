@@ -10,6 +10,7 @@ import Industries from "./pages/Industries";
 import Process from "./pages/Process";
 import Careers from "./pages/Careers";
 import Contact from "./pages/Contact";
+import Staffing from "./components/Staffing";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path="/process" element={<Process />} />
         <Route path="/careers" element={<Careers />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/staffing" element={<Staffing />} />
       </Routes>
 
       <Footer />

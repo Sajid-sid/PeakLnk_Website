@@ -1,0 +1,1086 @@
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.navbar-wrapper {
+  position: relative;
+  width: 100%;
+  z-index: 9999;
+  background: #ffffff;
+}
+
+/* =========================================================
+   NAVBAR
+========================================================= */
+
+.navbar {
+  width: 100%;
+  min-height: 82px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 5%;
+
+  background: #ffffff;
+
+  border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+
+  box-shadow: 0 2px 12px rgba(15, 23, 42, 0.04);
+}
+
+/* =========================================================
+   LOGO
+========================================================= */
+
+.logo {
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  cursor: pointer;
+
+  flex-shrink: 0;
+}
+
+.logo-circle {
+  width: 48px;
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: linear-gradient(
+    135deg,
+    #0f172a,
+    #2563eb
+  );
+
+  box-shadow: 0 6px 15px rgba(37, 99, 235, 0.22);
+}
+
+.logo-circle span {
+  font-size: 23px;
+  line-height: 1;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.logo-text h2 {
+  margin: 0;
+
+  font-size: 25px;
+  font-weight: 800;
+
+  line-height: 1;
+
+  letter-spacing: -0.7px;
+
+  color: #111827;
+}
+
+.logo-text h2 span {
+  color: #2563eb;
+}
+
+.logo-text p {
+  margin: 5px 0 0;
+
+  font-size: 7px;
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+  color: #64748b;
+}
+
+/* =========================================================
+   NAVIGATION MENU
+========================================================= */
+
+.nav-menu {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-around;
+
+  gap: 5px;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.nav-menu > li {
+  position: relative;
+}
+
+/* =========================================================
+   NORMAL NAV LINKS
+========================================================= */
+
+.nav-menu > li > a,
+.nav-menu > li > button {
+  display: flex;
+
+  align-items: center;
+
+  gap: 6px;
+
+  height: 82px;
+
+  padding: 0 15px;
+
+  border: none;
+  outline: none;
+
+  background: transparent;
+
+  color: #1f2937;
+
+  font-family: inherit;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  letter-spacing: 0.5px;
+
+  text-decoration: none;
+
+  cursor: pointer;
+
+  transition:
+    color 0.25s ease,
+    background 0.25s ease;
+}
+
+.nav-menu > li > a:hover,
+.nav-menu > li > button:hover {
+  color: #2563eb;
+}
+
+.nav-menu > li > button span {
+  font-size: 14px;
+
+  transition: transform 0.25s ease;
+}
+
+.dropdown:hover > button span {
+  transform: rotate(180deg);
+}
+
+/* =========================================================
+   DROPDOWN CONTAINER
+========================================================= */
+
+.dropdown {
+  position: relative;
+}
+
+/* =========================================================
+   SIMPLE DROPDOWN
+========================================================= */
+
+.simple-dropdown {
+  position: absolute;
+
+  top: calc(100% + 1px);
+  left: 50%;
+
+  min-width: 220px;
+
+  transform: translateX(-50%);
+
+  padding: 12px 0;
+
+  background: #ffffff;
+
+  border: 1px solid rgba(15, 23, 42, 0.08);
+
+  border-radius: 0 0 10px 10px;
+
+  box-shadow:
+    0 18px 45px rgba(15, 23, 42, 0.12);
+
+  animation: dropdownFade 0.2s ease;
+}
+
+.simple-dropdown a {
+  display: block;
+
+  padding: 12px 22px;
+
+  color: #334155;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  text-decoration: none;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    padding-left 0.2s ease;
+}
+
+.simple-dropdown a:hover {
+  color: #2563eb;
+
+  background: #f8fafc;
+
+  padding-left: 27px;
+}
+
+/* =========================================================
+   MEGA MENU
+========================================================= */
+
+.mega-menu {
+  position: fixed;
+
+  top: 82px;
+
+  left: 5%;
+  right: 5%;
+
+  width: 90%;
+
+  min-height: 390px;
+
+  display: grid;
+
+  grid-template-columns:
+    1.35fr
+    1fr
+    1fr
+    1fr;
+
+  gap: 35px;
+
+  padding: 42px 45px;
+
+  background: #ffffff;
+
+  border-top: 3px solid #2563eb;
+
+  border-radius: 0 0 14px 14px;
+
+  box-shadow:
+    0 25px 60px rgba(15, 23, 42, 0.15);
+
+  animation: megaMenuFade 0.25s ease;
+}
+
+/* =========================================================
+   MEGA MENU LEFT SECTION
+========================================================= */
+
+.mega-left {
+  padding-right: 25px;
+
+  border-right: 1px solid #e5e7eb;
+}
+
+.small-heading {
+  margin: 0 0 15px;
+
+  color: #2563eb;
+
+  font-size: 11px;
+  font-weight: 800;
+
+  letter-spacing: 2px;
+}
+
+.mega-left h2 {
+  margin: 0;
+
+  color: #111827;
+
+  font-size: 29px;
+  font-weight: 700;
+
+  line-height: 1.25;
+
+  letter-spacing: -0.8px;
+}
+
+.mega-left h3 {
+  margin: 25px 0;
+
+  color: #64748b;
+
+  font-size: 11px;
+  font-weight: 800;
+
+  letter-spacing: 1.8px;
+}
+
+/* =========================================================
+   GET IN TOUCH BUTTON
+========================================================= */
+
+.touch-btn {
+  padding: 13px 23px;
+
+  border: none;
+
+  border-radius: 5px;
+
+  background: #2563eb;
+
+  color: #ffffff;
+
+  font-family: inherit;
+
+  font-size: 11px;
+  font-weight: 800;
+
+  letter-spacing: 0.7px;
+
+  cursor: pointer;
+
+  transition:
+    background 0.25s ease,
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.touch-btn:hover {
+  background: #1d4ed8;
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 8px 20px rgba(37, 99, 235, 0.25);
+}
+
+/* =========================================================
+   MEGA MENU COLUMNS
+========================================================= */
+
+.mega-column {
+  padding-left: 5px;
+}
+
+.mega-column h4 {
+  margin: 0 0 13px;
+
+  color: #111827;
+
+  font-size: 11px;
+  font-weight: 800;
+
+  letter-spacing: 1px;
+}
+
+.mega-column a {
+  display: block;
+
+  margin-bottom: 11px;
+
+  color: #64748b;
+
+  font-size: 11px;
+  font-weight: 600;
+
+  letter-spacing: 0.4px;
+
+  text-decoration: none;
+
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.mega-column a:hover {
+  color: #2563eb;
+
+  transform: translateX(4px);
+}
+
+/* =========================================================
+   SECOND HEADING
+========================================================= */
+
+.second-heading {
+  margin-top: 28px !important;
+}
+
+/* =========================================================
+   INDUSTRIES MEGA MENU
+========================================================= */
+
+.industries-menu {
+  /*
+    Keeps the same mega-menu position,
+    width and overall design from your
+    original CSS.
+  */
+
+  grid-template-columns:
+    1.35fr
+    1fr
+    1fr
+    1fr;
+
+  gap: 42px;
+
+  min-height: 395px;
+
+  padding: 48px 55px;
+}
+
+/* =========================================================
+   INDUSTRIES LEFT CONTENT
+========================================================= */
+
+.industries-left {
+  padding-right: 35px;
+
+  border-right: 1px solid #e5e7eb;
+}
+
+.industries-left h2 {
+  margin: 0;
+
+  color: #111827;
+
+  font-size: 30px;
+
+  font-weight: 300;
+
+  line-height: 1.4;
+
+  letter-spacing: -0.7px;
+}
+
+.industries-left p {
+  margin: 15px 0 30px;
+
+  color: #172033;
+
+  font-size: 16px;
+
+  font-weight: 500;
+
+  letter-spacing: 0.5px;
+}
+
+/* =========================================================
+   INDUSTRIES COLUMNS
+========================================================= */
+
+.industries-column {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 22px;
+
+  padding-top: 3px;
+}
+
+.industries-column a {
+  display: block;
+
+  color: #7a7f87;
+
+  font-size: 11px;
+
+  font-weight: 500;
+
+  letter-spacing: 0.5px;
+
+  text-decoration: none;
+
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.industries-column a:hover {
+  color: #2563eb;
+
+  transform: translateX(4px);
+}
+
+/* =========================================================
+   INDUSTRIES BUTTON
+========================================================= */
+
+.industries-left .touch-btn {
+  background: #000000;
+
+  border-radius: 4px;
+
+  padding: 13px 20px;
+
+  font-size: 11px;
+
+  letter-spacing: 0.5px;
+}
+
+.industries-left .touch-btn:hover {
+  background: #222222;
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 8px 20px rgba(0, 0, 0, 0.18);
+}
+
+/* =========================================================
+   SOCIAL ICONS
+========================================================= */
+
+.social-icons {
+  display: flex;
+
+  align-items: center;
+
+  gap: 7px;
+
+  margin-left: 8px;
+}
+
+.social-icons a {
+  width: 30px;
+  height: 30px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 50%;
+
+  color: #475569;
+
+  background: #ffffff;
+
+  font-size: 12px;
+  font-weight: 800;
+
+  text-decoration: none;
+
+  transition:
+    color 0.25s ease,
+    background 0.25s ease,
+    border-color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.social-icons a:hover {
+  color: #ffffff;
+
+  background: #2563eb;
+
+  border-color: #2563eb;
+
+  transform: translateY(-2px);
+}
+
+/* =========================================================
+   MOBILE MENU BUTTON
+========================================================= */
+
+.mobile-menu-btn {
+  display: none;
+
+  width: 42px;
+  height: 42px;
+
+  border: none;
+
+  border-radius: 7px;
+
+  background: #f1f5f9;
+
+  color: #1e293b;
+
+  font-size: 23px;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
+}
+
+.mobile-menu-btn:hover {
+  background: #2563eb;
+
+  color: #ffffff;
+}
+
+/* =========================================================
+   ANIMATIONS
+========================================================= */
+
+@keyframes dropdownFade {
+  from {
+    opacity: 0;
+
+    transform: translate(-50%, -8px);
+  }
+
+  to {
+    opacity: 1;
+
+    transform: translate(-50%, 0);
+  }
+}
+
+@keyframes megaMenuFade {
+  from {
+    opacity: 0;
+
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+
+    transform: translateY(0);
+  }
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1100px) {
+
+  .navbar {
+    padding: 0 3%;
+  }
+
+  .nav-menu {
+    gap: 0;
+  }
+
+  .nav-menu > li > a,
+  .nav-menu > li > button {
+    padding: 0 10px;
+
+    font-size: 11px;
+  }
+
+  .mega-menu {
+    left: 3%;
+
+    right: 3%;
+
+    width: 94%;
+
+    gap: 20px;
+
+    padding: 35px;
+  }
+
+  .mega-left h2 {
+    font-size: 25px;
+  }
+
+  /* =====================================================
+     INDUSTRIES TABLET
+  ===================================================== */
+
+  .industries-menu {
+    gap: 25px;
+
+    padding: 38px 35px;
+  }
+
+  .industries-left {
+    padding-right: 20px;
+  }
+
+  .industries-left h2 {
+    font-size: 25px;
+  }
+
+  .industries-column {
+    gap: 18px;
+  }
+
+  .industries-column a {
+    font-size: 10px;
+  }
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 850px) {
+
+  .navbar {
+    min-height: 72px;
+
+    padding: 0 20px;
+  }
+
+  /* Logo */
+
+  .logo-circle {
+    width: 42px;
+
+    height: 42px;
+  }
+
+  .logo-circle span {
+    font-size: 20px;
+  }
+
+  .logo-text h2 {
+    font-size: 21px;
+  }
+
+  .logo-text p {
+    font-size: 6px;
+
+    letter-spacing: 1.5px;
+  }
+
+  /* Mobile Button */
+
+  .mobile-menu-btn {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+  }
+
+  /* Navigation */
+
+  .nav-menu {
+    position: absolute;
+
+    top: 72px;
+
+    left: 0;
+
+    width: 100%;
+
+    display: none;
+
+    flex-direction: column;
+
+    align-items: stretch;
+
+    padding: 12px 20px 25px;
+
+    background: #ffffff;
+
+    border-top: 1px solid #e5e7eb;
+
+    box-shadow:
+      0 20px 35px rgba(15, 23, 42, 0.12);
+  }
+
+  .nav-menu.mobile-open {
+    display: flex;
+  }
+
+  .nav-menu > li {
+    width: 100%;
+  }
+
+  .nav-menu > li > a,
+  .nav-menu > li > button {
+    width: 100%;
+
+    height: 50px;
+
+    justify-content: space-between;
+
+    padding: 0 12px;
+
+    border-bottom: 1px solid #f1f5f9;
+
+    font-size: 12px;
+  }
+
+  /* =====================================================
+     Simple Dropdown
+  ===================================================== */
+
+  .simple-dropdown {
+    position: static;
+
+    width: 100%;
+
+    min-width: 0;
+
+    transform: none;
+
+    padding: 5px 0;
+
+    border: none;
+
+    border-radius: 0;
+
+    box-shadow: none;
+
+    background: #f8fafc;
+
+    animation: none;
+  }
+
+  .simple-dropdown a {
+    padding: 11px 25px;
+
+    font-size: 12px;
+  }
+
+  .simple-dropdown a:hover {
+    padding-left: 30px;
+  }
+
+  /* =====================================================
+     Mega Menu
+  ===================================================== */
+
+  .mega-menu {
+    position: static;
+
+    width: 100%;
+
+    min-height: auto;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 25px;
+
+    padding: 25px 15px;
+
+    border-top: none;
+
+    border-radius: 0;
+
+    box-shadow: none;
+
+    background: #f8fafc;
+
+    animation: none;
+  }
+
+  .mega-left {
+    padding-right: 0;
+
+    padding-bottom: 20px;
+
+    border-right: none;
+
+    border-bottom: 1px solid #e2e8f0;
+  }
+
+  .mega-left h2 {
+    font-size: 24px;
+  }
+
+  .mega-column {
+    padding: 0;
+  }
+
+  .mega-column h4 {
+    font-size: 11px;
+  }
+
+  .mega-column a {
+    font-size: 11px;
+
+    margin-bottom: 9px;
+  }
+
+  /* =====================================================
+     INDUSTRIES MOBILE
+  ===================================================== */
+
+  .industries-menu {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 22px;
+
+    padding: 25px 15px;
+  }
+
+  .industries-left {
+    padding-right: 0;
+
+    padding-bottom: 20px;
+
+    border-right: none;
+
+    border-bottom: 1px solid #e2e8f0;
+  }
+
+  .industries-left h2 {
+    font-size: 24px;
+
+    line-height: 1.35;
+  }
+
+  .industries-left p {
+    font-size: 14px;
+
+    margin: 12px 0 22px;
+  }
+
+  .industries-column {
+    gap: 15px;
+
+    padding: 0;
+  }
+
+  .industries-column a {
+    font-size: 11px;
+  }
+
+  /* Social */
+
+  .social-icons {
+    justify-content: flex-start;
+
+    margin: 15px 0 0;
+
+    padding: 10px 12px;
+  }
+}
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+  .navbar {
+    padding: 0 15px;
+  }
+
+  .logo {
+    gap: 8px;
+  }
+
+  .logo-circle {
+    width: 38px;
+
+    height: 38px;
+  }
+
+  .logo-circle span {
+    font-size: 18px;
+  }
+
+  .logo-text h2 {
+    font-size: 19px;
+  }
+
+  .logo-text p {
+    font-size: 5px;
+
+    letter-spacing: 1.1px;
+  }
+
+  .mobile-menu-btn {
+    width: 39px;
+
+    height: 39px;
+
+    font-size: 21px;
+  }
+
+  .nav-menu {
+    top: 72px;
+
+    padding-left: 12px;
+
+    padding-right: 12px;
+  }
+
+  .mega-left h2 {
+    font-size: 21px;
+  }
+
+  /* =====================================================
+     INDUSTRIES SMALL MOBILE
+  ===================================================== */
+
+  .industries-left h2 {
+    font-size: 21px;
+  }
+
+  .industries-left p {
+    font-size: 13px;
+  }
+
+  .industries-column {
+    gap: 13px;
+  }
+
+  .industries-column a {
+    font-size: 10px;
+  }
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: 15px;
+}
+
+.social-icons a {
+  width: 32px;
+  height: 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #e2e8f0;
+  border-radius: 50%;
+
+  background: #ffffff;
+  color: #475569;
+
+  text-decoration: none;
+
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+
+  transition: all 0.25s ease;
+}
+
+.social-icons a:hover {
+  background: #2563eb;
+  border-color: #2563eb;
+  color: #ffffff;
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 5px 12px rgba(37, 99, 235, 0.25);
+}

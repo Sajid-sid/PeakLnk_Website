@@ -1,0 +1,787 @@
+/* =========================================================
+   STAFFING PAGE
+========================================================= */
+
+.staffing-page {
+  width: 100%;
+  overflow: hidden;
+  background: #ffffff;
+  color: #18202b;
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+}
+
+.staffing-container {
+  width: min(1180px, calc(100% - 40px));
+  margin: 0 auto;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.staffing-hero {
+  position: relative;
+  min-height: 423px;
+
+  background-image: url("/staffing-banner.png");
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  isolation: isolate;
+}
+
+.staffing-hero-overlay {
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.48),
+      rgba(0, 0, 0, 0.22),
+      rgba(0, 0, 0, 0.38)
+    );
+
+  z-index: -1;
+}
+
+.staffing-hero-content {
+  width: min(900px, calc(100% - 40px));
+  text-align: center;
+  color: #ffffff;
+  padding: 70px 20px;
+}
+
+.staffing-hero-content h1 {
+  margin: 0 0 20px;
+
+  font-size: clamp(38px, 5vw, 64px);
+  line-height: 1.1;
+  font-weight: 400;
+  letter-spacing: -1.5px;
+}
+
+.staffing-hero-content p {
+  max-width: 680px;
+  margin: 0 auto 30px;
+
+  font-size: 18px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.staffing-hero-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 48px;
+  padding: 0 28px;
+
+  color: #ffffff;
+  background: #0d6b61;
+
+  border-radius: 4px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  transition: 0.3s ease;
+}
+
+.staffing-hero-btn:hover {
+  background: #095148;
+  transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+.staffing-intro {
+  padding: 100px 0;
+  background: #ffffff;
+}
+
+.staffing-intro-grid {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.staffing-small-title {
+  display: inline-block;
+
+  margin-bottom: 16px;
+
+  color: #0d7569;
+
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.staffing-intro-content h2,
+.staffing-why-left h2 {
+  margin: 0 0 24px;
+
+  color: #18202b;
+
+  font-size: clamp(34px, 4vw, 50px);
+  line-height: 1.15;
+  font-weight: 600;
+  letter-spacing: -1px;
+}
+
+.staffing-intro-content p,
+.staffing-why-left p {
+  margin: 0 0 18px;
+
+  color: #667085;
+
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.staffing-primary-btn {
+  display: inline-flex;
+  margin-top: 15px;
+
+  padding: 14px 27px;
+
+  background: #0d6b61;
+  color: #ffffff;
+
+  border-radius: 4px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  transition: 0.3s ease;
+}
+
+.staffing-primary-btn:hover {
+  background: #095148;
+  transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   INTRO CARD
+========================================================= */
+
+.staffing-intro-card {
+  position: relative;
+
+  padding: 48px;
+
+  background: #f2f7f6;
+
+  border-radius: 8px;
+
+  border: 1px solid #e1ebe9;
+}
+
+.staffing-card-icon {
+  width: 64px;
+  height: 64px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 25px;
+
+  background: #0d6b61;
+  color: #ffffff;
+
+  border-radius: 50%;
+
+  font-size: 27px;
+}
+
+.staffing-intro-card h3 {
+  margin: 0 0 14px;
+
+  color: #18202b;
+
+  font-size: 27px;
+  font-weight: 600;
+}
+
+.staffing-intro-card > p {
+  margin: 0;
+
+  color: #667085;
+
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.staffing-stat-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  margin-top: 38px;
+  padding-top: 25px;
+
+  border-top: 1px solid #d8e5e2;
+}
+
+.staffing-stat-row div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.staffing-stat-row strong {
+  color: #0d6b61;
+
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.staffing-stat-row span {
+  color: #667085;
+
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+
+/* =========================================================
+   SERVICES
+========================================================= */
+
+.staffing-services {
+  padding: 100px 0;
+
+  background: #f7f9f9;
+}
+
+.staffing-section-heading {
+  max-width: 720px;
+  margin: 0 auto 60px;
+
+  text-align: center;
+}
+
+.staffing-section-heading > span {
+  display: block;
+
+  margin-bottom: 13px;
+
+  color: #0d7569;
+
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.staffing-section-heading h2 {
+  margin: 0 0 18px;
+
+  color: #18202b;
+
+  font-size: clamp(34px, 4vw, 48px);
+  line-height: 1.15;
+  font-weight: 600;
+}
+
+.staffing-section-heading p {
+  margin: 0;
+
+  color: #667085;
+
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.staffing-service-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 22px;
+}
+
+.staffing-service-card {
+  position: relative;
+
+  min-height: 285px;
+  padding: 34px;
+
+  background: #ffffff;
+
+  border: 1px solid #e7ebeb;
+  border-radius: 7px;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.staffing-service-card:hover {
+  transform: translateY(-7px);
+
+  border-color: #c8ddda;
+
+  box-shadow: 0 18px 45px rgba(18, 51, 47, 0.1);
+}
+
+.service-number {
+  position: absolute;
+  top: 25px;
+  right: 28px;
+
+  color: #dce9e7;
+
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.service-icon {
+  width: 54px;
+  height: 54px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 22px;
+
+  background: #e7f2f0;
+
+  border-radius: 5px;
+
+  font-size: 24px;
+}
+
+.staffing-service-card h3 {
+  margin: 0 0 12px;
+
+  color: #18202b;
+
+  font-size: 21px;
+  font-weight: 600;
+}
+
+.staffing-service-card p {
+  margin: 0 0 20px;
+
+  color: #667085;
+
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.staffing-service-card a {
+  color: #0d6b61;
+
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.staffing-service-card a:hover {
+  color: #074d46;
+}
+
+
+/* =========================================================
+   PROCESS
+========================================================= */
+
+.staffing-process {
+  padding: 100px 0;
+
+  background: #ffffff;
+}
+
+.staffing-process-grid {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr auto 1fr;
+
+  align-items: start;
+  gap: 20px;
+}
+
+.process-item {
+  text-align: center;
+}
+
+.process-circle {
+  width: 72px;
+  height: 72px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0 auto 22px;
+
+  background: #0d6b61;
+  color: #ffffff;
+
+  border-radius: 50%;
+
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.process-item h3 {
+  margin: 0 0 12px;
+
+  color: #18202b;
+
+  font-size: 20px;
+}
+
+.process-item p {
+  max-width: 270px;
+  margin: auto;
+
+  color: #667085;
+
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.process-line {
+  width: 80px;
+  height: 1px;
+
+  margin-top: 36px;
+
+  background: #cbdedb;
+}
+
+
+/* =========================================================
+   WHY CHOOSE US
+========================================================= */
+
+.staffing-why {
+  padding: 100px 0;
+
+  background: #f2f7f6;
+}
+
+.staffing-why-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+
+  gap: 90px;
+
+  align-items: center;
+}
+
+.staffing-benefits {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.benefit {
+  display: flex;
+  gap: 15px;
+
+  padding: 25px;
+
+  background: #ffffff;
+
+  border-radius: 6px;
+}
+
+.benefit-icon {
+  flex-shrink: 0;
+
+  width: 32px;
+  height: 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #0d6b61;
+  color: #ffffff;
+
+  border-radius: 50%;
+
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.benefit h3 {
+  margin: 0 0 7px;
+
+  color: #18202b;
+
+  font-size: 16px;
+}
+
+.benefit p {
+  margin: 0;
+
+  color: #667085;
+
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+
+/* =========================================================
+   CTA
+========================================================= */
+
+.staffing-cta {
+  position: relative;
+
+  min-height: 420px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background:
+    linear-gradient(
+      120deg,
+      #123e3a,
+      #0d6b61
+    );
+
+  overflow: hidden;
+}
+
+.staffing-cta::before,
+.staffing-cta::after {
+  content: "";
+
+  position: absolute;
+
+  width: 300px;
+  height: 300px;
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  border-radius: 50%;
+}
+
+.staffing-cta::before {
+  top: -150px;
+  left: -100px;
+}
+
+.staffing-cta::after {
+  right: -100px;
+  bottom: -180px;
+}
+
+.staffing-cta-overlay {
+  position: absolute;
+  inset: 0;
+
+  background:
+    radial-gradient(
+      circle at center,
+      rgba(255, 255, 255, 0.08),
+      transparent 50%
+    );
+}
+
+.staffing-cta-content {
+  position: relative;
+
+  width: min(800px, calc(100% - 40px));
+
+  text-align: center;
+
+  color: #ffffff;
+}
+
+.staffing-cta-content > span {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.staffing-cta-content h2 {
+  margin: 18px 0;
+
+  font-size: clamp(36px, 5vw, 56px);
+  line-height: 1.15;
+  font-weight: 600;
+}
+
+.staffing-cta-content p {
+  max-width: 600px;
+  margin: 0 auto 30px;
+
+  color: rgba(255, 255, 255, 0.82);
+
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.staffing-cta-btn {
+  display: inline-flex;
+
+  min-height: 50px;
+  padding: 0 32px;
+
+  align-items: center;
+  justify-content: center;
+
+  background: #ffffff;
+  color: #0d6b61;
+
+  border-radius: 4px;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  transition: 0.3s ease;
+}
+
+.staffing-cta-btn:hover {
+  transform: translateY(-2px);
+
+  background: #eaf4f2;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1000px) {
+
+  .staffing-intro-grid,
+  .staffing-why-grid {
+    grid-template-columns: 1fr;
+
+    gap: 50px;
+  }
+
+  .staffing-service-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .staffing-process-grid {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .process-line {
+    width: 1px;
+    height: 45px;
+
+    margin: -15px auto 0;
+  }
+
+  .process-item p {
+    max-width: 450px;
+  }
+}
+
+
+@media (max-width: 700px) {
+
+  .staffing-container {
+    width: min(100% - 28px, 1180px);
+  }
+
+  .staffing-hero {
+    min-height: 390px;
+
+    background-position: center;
+  }
+
+  .staffing-hero-content {
+    padding: 50px 10px;
+  }
+
+  .staffing-hero-content h1 {
+    font-size: 40px;
+  }
+
+  .staffing-hero-content p {
+    font-size: 15px;
+  }
+
+  .staffing-intro,
+  .staffing-services,
+  .staffing-process,
+  .staffing-why {
+    padding: 70px 0;
+  }
+
+  .staffing-intro-content h2,
+  .staffing-why-left h2 {
+    font-size: 34px;
+  }
+
+  .staffing-intro-card {
+    padding: 30px;
+  }
+
+  .staffing-service-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .staffing-benefits {
+    grid-template-columns: 1fr;
+  }
+
+  .staffing-section-heading {
+    margin-bottom: 40px;
+  }
+
+  .staffing-cta {
+    min-height: 380px;
+  }
+
+  .staffing-cta-content h2 {
+    font-size: 36px;
+  }
+}
+
+
+@media (max-width: 450px) {
+
+  .staffing-hero {
+    min-height: 350px;
+  }
+
+  .staffing-hero-content h1 {
+    font-size: 34px;
+  }
+
+  .staffing-hero-content p {
+    font-size: 14px;
+  }
+
+  .staffing-stat-row {
+    gap: 10px;
+  }
+
+  .staffing-stat-row strong {
+    font-size: 21px;
+  }
+
+  .staffing-stat-row span {
+    font-size: 10px;
+  }
+
+  .staffing-service-card {
+    padding: 28px 24px;
+  }
+}
