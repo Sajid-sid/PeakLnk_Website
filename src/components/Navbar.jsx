@@ -210,84 +210,98 @@ const Navbar = () => {
           </li>
 
           {/* INDUSTRIES */}
-          <li
-            className="dropdown"
-            onMouseEnter={() => setActiveDropdown("industries")}
-            onMouseLeave={() => setActiveDropdown(null)}
-          >
-            <button onClick={() => toggleDropdown("industries")}>
-              INDUSTRIES
-            </button>
+<li
+  className="dropdown"
+  onMouseEnter={() => setActiveDropdown("industries")}
+  onMouseLeave={() => setActiveDropdown(null)}
+>
+  <button onClick={() => toggleDropdown("industries")}>
+    INDUSTRIES
+  </button>
 
-            {/* INDUSTRIES MEGA MENU */}
-            {activeDropdown === "industries" && (
-              <div className="mega-menu industries-menu">
+  {/* INDUSTRIES MEGA MENU */}
+  {activeDropdown === "industries" && (
+    <div className="mega-menu industries-menu">
 
-                {/* LEFT CONTENT */}
-                <div className="industries-left">
-                  <h2>
-                    Competitive, high-
-                    <br />
-                    performing
-                    <br />
-                    How we help win in the
-                    <br />
-                    digital economy
-                  </h2>
+      {/* LEFT CONTENT */}
+      <div className="industries-left">
 
-                  <p>LEAD THE CHANGE</p>
+        <h2>
+          Competitive, high-
+          <br />
+          performing
+        </h2>
 
-                  <button className="touch-btn">
-                    GET IN TOUCH
-                  </button>
-                </div>
+        <p>
+          How we help win in the
+          <br />
+          digital economy
+        </p>
 
-                {/* INDUSTRIES COLUMN 1 */}
-                <div className="industries-column">
-                  <a href="#">
-                    AEROSPACE &amp; DEFENCE
-                  </a>
+        <button
+          className="touch-btn"
+          onClick={() => {
+            window.location.href = "/contact";
+          }}
+        >
+          GET IN TOUCH
+        </button>
 
-                  <a href="#">CHEMICAL</a>
+      </div>
 
-                  <a href="#">HEALTH</a>
 
-                  <a href="#">LIFE SCIENCE</a>
+      {/* INDUSTRIES COLUMN 1 */}
+      <div className="industries-column">
 
-                  <a href="#">
-                    SOFTWARE AND PROCESS
-                  </a>
-                </div>
+        <a href="/industries">
+          INFORMATION TECHNOLOGY
+        </a>
 
-                {/* INDUSTRIES COLUMN 2 */}
-                <div className="industries-column">
-                  <a href="#">AUTOMOTIVE</a>
+        <a href="/industries">
+          HEALTHCARE
+        </a>
 
-                  <a href="#">TELECOM</a>
+        <a href="/industries">
+          BANKING &amp; FINANCIAL SERVICES
+        </a>
 
-                  <a href="#">HI TECH</a>
+      </div>
 
-                  <a href="#">NATURAL RESOURCES</a>
 
-                  <a href="#">TRAVEL</a>
-                </div>
+      {/* INDUSTRIES COLUMN 2 */}
+      <div className="industries-column">
 
-                {/* INDUSTRIES COLUMN 3 */}
-                <div className="industries-column">
-                  <a href="#">BANKING</a>
+        <a href="/industries">
+          E-COMMERCE &amp; RETAIL
+        </a>
 
-                  <a href="#">RETAIL</a>
+        <a href="/industries">
+          ENGINEERING &amp; MANUFACTURING
+        </a>
 
-                  <a href="#">MANUFACTURING</a>
+        <a href="/industries">
+          TELECOMMUNICATIONS
+        </a>
 
-                  <a href="#">INSURANCE</a>
+      </div>
 
-                  <a href="#">UTILITIES</a>
-                </div>
 
-              </div>
-            )}
-          </li>
+      {/* INDUSTRIES COLUMN 3 */}
+      <div className="industries-column">
+
+        <a href="/industries">
+          PROFESSIONAL SERVICES
+        </a>
+
+        <a href="/industries">
+          STARTUPS &amp; EMERGING BUSINESSES
+        </a>
+
+      </div>
+
+    </div>
+  )}
+</li>
 
           {/* COMPANY */}
           <li

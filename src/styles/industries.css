@@ -1,0 +1,794 @@
+.industries-page {
+  width: 100%;
+  background: #ffffff;
+  color: #111827;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.industries-hero {
+  min-height: 520px;
+
+  display: flex;
+  align-items: center;
+
+  background: linear-gradient(
+    120deg,
+    #132A3E 0%,
+    #1A5665 55%,
+    #287581 100%
+    );
+
+  color: #ffffff;
+}
+
+.industries-hero-content {
+
+  width: min(1180px, 90%);
+  margin: auto;
+}
+
+.eyebrow {
+  display: block;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+  color:white;
+
+  margin-bottom: 18px;
+}
+
+.industries-hero .eyebrow {
+  color: white;
+}
+
+.industries-hero h1 {
+  margin: 0 0 25px;
+
+  font-size: 58px;
+  line-height: 1.08;
+
+  font-weight: 700;
+}
+
+.industries-hero p {
+  max-width: 650px;
+
+  font-size: 18px;
+  line-height: 1.7;
+
+  color: #dbeafe;
+}
+
+
+/* =========================
+   INTRO
+========================= */
+
+.industries-intro {
+  padding: 110px 0;
+}
+
+.intro-content {
+  width: min(1180px, 90%);
+  margin: auto;
+
+  max-width: 800px;
+}
+
+.intro-content h2 {
+  font-size: 45px;
+  line-height: 1.2;
+
+  margin: 0 0 25px;
+}
+
+.intro-content p {
+  font-size: 17px;
+
+  line-height: 1.8;
+
+  color: #6b7280;
+}
+
+
+/* =========================
+   INDUSTRY BLOCKS
+========================= */
+
+.industries-list-section {
+  width: min(1180px, 90%);
+  margin: auto;
+}
+
+.industry-block {
+  display: grid;
+
+  grid-template-columns: 80px 1fr 420px;
+
+  gap: 50px;
+
+  align-items: center;
+
+  padding: 90px 0;
+
+  border-top: 1px solid #e5e7eb;
+}
+
+.industry-block.reverse {
+  grid-template-columns: 420px 1fr 80px;
+}
+
+.industry-block.reverse .industry-number {
+  order: 3;
+}
+
+.industry-block.reverse .industry-content {
+  order: 2;
+}
+
+.industry-block.reverse .industry-visual {
+  order: 1;
+}
+
+.industry-number {
+  font-size: 20px;
+
+  font-weight: 700;
+
+  color: #1A5665;
+
+  align-self: start;
+}
+
+.industry-content h2 {
+  font-size: 38px;
+
+  margin: 0 0 20px;
+
+  line-height: 1.2;
+}
+
+.industry-content p {
+  font-size: 16px;
+
+  line-height: 1.8;
+
+  color:#1A5665;
+
+  max-width: 620px;
+
+  margin-bottom: 30px;
+}
+
+
+/* =========================
+   SERVICES
+========================= */
+
+.industry-services {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 12px;
+}
+
+.industry-service {
+  padding: 13px 15px;
+
+  background: #f8fafc;
+
+  border: 1px solid #e5e7eb;
+
+  font-size: 14px;
+
+  color: #374151;
+}
+
+.industry-service span {
+  color: #2563eb;
+
+  font-weight: 700;
+
+  margin-right: 8px;
+}
+
+
+/* =========================
+   VISUAL
+========================= */
+
+.industry-visual {
+  height: 330px;
+
+  display: flex;
+  align-items: flex-end;
+
+  padding: 35px;
+
+  background: linear-gradient(
+    120deg,
+    #132A3E 0%,
+    #1A5665 55%,
+    #287581 100%
+    );
+
+  border-radius: 4px;
+
+  color: #ffffff;
+}
+
+.visual-content span {
+  font-size: 14px;
+
+  opacity: 0.7;
+}
+
+.visual-content h3 {
+  font-size: 27px;
+
+  margin: 10px 0 0;
+}
+
+
+/* =========================
+   WHY PEAKLINK
+========================= */
+
+.industries-why {
+  margin-top: 80px;
+
+  padding: 100px 5%;
+
+  background: #f8fafc;
+}
+
+.why-content {
+  max-width: 750px;
+
+  margin-bottom: 60px;
+}
+
+.why-content h2 {
+  font-size: 44px;
+
+  line-height: 1.2;
+
+  margin: 0 0 20px;
+}
+
+.why-content p {
+  color: #6b7280;
+
+  line-height: 1.8;
+
+  font-size: 16px;
+}
+
+.why-grid {
+  max-width: 1180px;
+
+  margin: auto;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 30px;
+}
+
+.why-grid > div {
+  background: #ffffff;
+
+  padding: 30px;
+
+  border: 1px solid #e5e7eb;
+}
+
+.why-grid h3 {
+  color: #2563eb;
+
+  font-size: 14px;
+}
+
+.why-grid h4 {
+  font-size: 20px;
+
+  margin: 12px 0;
+}
+
+.why-grid p {
+  color: #6b7280;
+
+  line-height: 1.7;
+
+  font-size: 14px;
+}
+
+
+/* =========================
+   CTA
+========================= */
+
+.industries-cta {
+  padding: 110px 20px;
+
+  text-align: center;
+
+  background: linear-gradient(
+    120deg,
+    #132A3E 0%,
+    #1A5665 55%,
+    #287581 100%
+  );
+  color: white;
+  
+}
+
+.industries-cta .eyebrow {
+  color: white;
+  font-size: 20px;
+}
+
+.industries-cta h2 {
+  font-size: 45px;
+
+  margin: 0 0 18px;
+}
+
+.industries-cta p {
+  color: #cbd5e1;
+  font-size: 20px;
+  max-width: 600px;
+  
+  margin: 0 auto 30px;
+
+  line-height: 2.0;
+}
+
+.industries-cta a {
+  display: inline-block;
+
+  padding: 14px 28px;
+
+  background:black ;
+
+  color: #ffffff;
+
+  text-decoration: none;
+
+  font-weight: 600;
+
+  border-radius: 4px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 950px) {
+
+  .industry-block,
+  .industry-block.reverse {
+    grid-template-columns: 1fr;
+
+    gap: 25px;
+  }
+
+  .industry-block.reverse .industry-number,
+  .industry-block.reverse .industry-content,
+  .industry-block.reverse .industry-visual {
+    order: initial;
+  }
+
+  .industry-visual {
+    height: 280px;
+  }
+
+  .why-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .industries-hero {
+    min-height: 430px;
+  }
+
+  .industries-hero h1 {
+    font-size: 40px;
+  }
+
+  .intro-content h2 {
+    font-size: 34px;
+  }
+
+  .industry-content h2 {
+    font-size: 30px;
+  }
+
+  .industry-services {
+    grid-template-columns: 1fr;
+  }
+
+  .why-content h2,
+  .industries-cta h2 {
+    font-size: 34px;
+  }
+
+}
+
+/* =====================================================
+   INDUSTRIES MEGA DROPDOWN
+===================================================== */
+
+.industries-menu-wrapper {
+  position: relative;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Trigger */
+
+.industries-menu-trigger {
+  border: none;
+  background: transparent;
+
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 400;
+
+  letter-spacing: 0.5px;
+
+  color: #222;
+
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  padding: 12px 0;
+}
+
+.industries-menu-trigger.active {
+  color: #4285f4;
+}
+
+.menu-arrow {
+  font-size: 15px;
+  line-height: 1;
+}
+
+
+/* =====================================================
+   MEGA MENU
+===================================================== */
+
+.industries-mega-menu {
+  position: absolute;
+
+   top: calc(100% + 30px);
+  left: 0;
+
+  width: 100vw;
+
+  background: #ffffff;
+
+  border-top: 1px solid #eeeeee;
+
+  box-shadow:
+    0 10px 25px rgba(0, 0, 0, 0.08);
+
+  z-index: 9999;
+}
+
+/* Mega Menu */
+/* Industries Mega Dropdown */
+.industries-mega-dropdown {
+  position: absolute;
+  top: calc(100% + 30px); /* gap between navbar and dropdown */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1100px;
+  background: #ffffff;
+  z-index: 9999;
+  border-top: 1px solid #eee;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.10);
+}
+
+/* Dropdown content */
+.industries-dropdown-content {
+  min-height: 315px;
+  padding: 55px 55px;
+  display: flex;
+  gap: 70px;
+}
+
+/* Left side */
+.industries-dropdown-intro {
+  width: 300px;
+  flex-shrink: 0;
+}
+
+.industries-dropdown-intro h2 {
+  color: #0b203c;
+  font-size: 32px;
+  line-height: 1.3;
+  font-weight: 400;
+  margin: 0 0 18px;
+}
+
+.industries-dropdown-intro p {
+  color: #0b203c;
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 0 0 25px;
+}
+
+.industries-dropdown-intro a {
+  color: #0b203c;
+  font-size: 15px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* Right side */
+.industries-dropdown-grid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 55px;
+  row-gap: 25px;
+}
+
+/* Industry links */
+.industries-dropdown-grid a {
+  color: #0b203c;
+  font-size: 17px;
+  line-height: 1.4;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+/* Hover */
+.industries-dropdown-grid a:hover {
+  color: #0b203c;
+  transform: translateX(4px);
+}
+
+
+/* Mega Menu Content */
+.industries-dropdown-content {
+  display: flex;
+  gap: 70px;
+  padding: 55px 50px;
+}
+
+
+/* Left side */
+.industries-dropdown-intro {
+  width: 300px;
+  flex-shrink: 0;
+}
+
+.industries-dropdown-intro h2 {
+  font-size: 32px;
+  line-height: 1.3;
+  margin-bottom: 18px;
+}
+
+.industries-dropdown-intro p {
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+
+/* Industry links */
+.industries-dropdown-grid {
+  flex: 1;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  column-gap: 50px;
+  row-gap: 25px;
+}
+
+
+.industries-dropdown-grid a {
+  font-size: 16px;
+  line-height: 1.4;
+
+  color: #123b5d;
+  text-decoration: none;
+
+  transition: all 0.2s ease;
+}
+
+
+.industries-dropdown-grid a:hover {
+  color: #000;
+  transform: translateX(4px);
+}
+
+
+/* Explore / Lead link */
+.industries-dropdown-intro a {
+  font-size: 15px;
+  font-weight: 500;
+  color: #123b5d;
+  text-decoration: none;
+}
+
+/* Inner container */
+
+.industries-mega-inner {
+  width: min(1200px, 92%);
+
+  min-height: 315px;
+
+  margin: 0 auto;
+
+  padding: 55px 0;
+
+  display: flex;
+
+  gap: 70px;
+}
+
+
+/* =====================================================
+   LEFT SIDE
+===================================================== */
+
+.mega-intro {
+  width: 360px;
+
+  flex-shrink: 0;
+}
+
+.mega-intro h2 {
+  margin: 0;
+
+  color: 0b203c;
+
+  font-size: 32px;
+
+  line-height: 1.35;
+
+  font-weight: 300;
+}
+
+.mega-intro p {
+  margin: 5px 0 20px;
+
+  color: #182c43;
+
+  font-size: 29px;
+
+  line-height: 1.35;
+
+  font-weight: 300;
+}
+
+.mega-intro a {
+  display: inline-block;
+
+  color: #173c61;
+
+  text-decoration: none;
+
+  font-size: 16px;
+
+  letter-spacing: 0.5px;
+
+  transition: 0.2s ease;
+}
+
+.mega-intro a:hover {
+  color: #4285f4;
+}
+
+
+/* =====================================================
+   INDUSTRY LINKS
+===================================================== */
+
+.mega-industries-grid {
+  flex: 1;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, minmax(140px, 1fr));
+
+  grid-auto-rows: min-content;
+
+  column-gap: 55px;
+
+  row-gap: 25px;
+
+  align-content: start;
+}
+
+.mega-industry-link {
+  text-decoration: none;
+
+  color: #999999;
+
+  font-size: 13px;
+
+  font-weight: 400;
+
+  letter-spacing: 0.2px;
+
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.mega-industry-link:hover {
+  color: #222222;
+
+  transform: translateX(2px);
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 900px) {
+
+  .industries-mega-inner {
+    flex-direction: column;
+
+    gap: 30px;
+
+    padding: 40px 0;
+  }
+
+  .mega-intro {
+    width: 100%;
+  }
+
+  .mega-intro h2 {
+    font-size: 27px;
+  }
+
+  .mega-intro p {
+    font-size: 24px;
+  }
+
+  .mega-industries-grid {
+    grid-template-columns: repeat(2, 1fr);
+
+    column-gap: 30px;
+
+    row-gap: 20px;
+  }
+}
+
+
+@media (max-width: 600px) {
+
+  .mega-industries-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .industries-mega-inner {
+    width: 88%;
+  }
+
+}
