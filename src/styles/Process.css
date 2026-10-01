@@ -4,8 +4,14 @@
 
 .process-page {
   width: 100%;
-  background: #ffffff;
-  color: #0b1f38;
+  background: linear-gradient(
+    120deg,
+    #132A3E 0%,
+    #1A5665 55%,
+    #287581 100%
+  );
+
+  color: #ffffff;
 }
 
 
@@ -20,7 +26,7 @@
   display: flex;
   align-items: center;
 
-  background: #102f52;
+  /* background: #102f52; */
 }
 
 .process-hero-container {
@@ -33,14 +39,13 @@
 }
 
 
-/* Small orange heading */
 
 .process-label {
   display: block;
 
   margin-bottom: 24px;
 
-  color: #f47721;
+  color: #287581 ;
 
   font-family: Arial, sans-serif;
   font-size: 15px;
@@ -68,7 +73,6 @@
 }
 
 
-/* Hero description */
 
 .process-hero p {
   max-width: 900px;
@@ -155,7 +159,7 @@
 
   border-radius: 50%;
 
-  background: #0b203c;
+  background: #287581 ;
 
   color: #ffffff;
 
@@ -167,7 +171,6 @@
 }
 
 
-/* Vertical connecting line */
 
 .process-vertical-line {
   position: absolute;
@@ -195,14 +198,14 @@
 }
 
 
-/* Step title */
+/*  title */
 
 .process-content h2 {
   margin: 0 0 15px;
 
-  color: #0b1f38;
+  color: #1A5665 ;
 
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: "Segoe UI", Arial, sans-serif;
 
   font-size: 38px;
 
@@ -221,7 +224,7 @@
 
   margin: 0;
 
-  color: #172f4b;
+  color:  #132A3E ;
 
   font-family: Arial, sans-serif;
 
