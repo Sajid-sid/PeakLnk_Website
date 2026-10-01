@@ -186,16 +186,40 @@ const Navbar = () => {
                 <div className="mega-column">
                   <h4>AI & ANALYTICS</h4>
 
-                  <a href="#">APPLIED AI</a>
-                  <a href="#">MODELLING</a>
-                  <a href="#">DATA ANALYTICS</a>
+                  <NavLink
+                    to="/staffing"
+                    onClick={closeMenu}
+                  >
+                    APPLIED AI
+                  </NavLink>  <NavLink
+                    to="/staffing"
+                    onClick={closeMenu}
+                  >
+                    MODELLING
+                  </NavLink>  <NavLink
+                    to="/staffing"
+                    onClick={closeMenu}
+                  >
+                    DATA ANALYTICS
+                  </NavLink>
 
                   <h4 className="second-heading">
                     SECURITY
                   </h4>
+                  <NavLink
+                    to="/staffing"
+                    onClick={closeMenu}
+                  >
+                  CYBERSECURITY
+                  </NavLink>
 
-                  <a href="#">CYBERSECURITY</a>
-                  <a href="#">QUALITY ASSURANCE</a>
+                <NavLink
+                    to="/staffing"
+                    onClick={closeMenu}
+                  >
+                   QUALITY ASSURANCE
+                  </NavLink>
+                 
                 </div>
 
               </div>
@@ -203,105 +227,108 @@ const Navbar = () => {
           </li>
 
           {/* PLATFORM */}
-           <li>
+          <li>
             <NavLink to="/process" onClick={closeMenu}>
               PROCESS
             </NavLink>
           </li>
 
           {/* INDUSTRIES */}
-<li
-  className="dropdown"
-  onMouseEnter={() => setActiveDropdown("industries")}
-  onMouseLeave={() => setActiveDropdown(null)}
->
-  <button onClick={() => toggleDropdown("industries")}>
-    INDUSTRIES
-  </button>
+          <li
+            className="dropdown"
+            onMouseEnter={() => setActiveDropdown("industries")}
+            onMouseLeave={() => setActiveDropdown(null)}
+          >
+            <button onClick={() => toggleDropdown("industries")}>
+              INDUSTRIES <span>v</span>
+            </button>
 
-  {/* INDUSTRIES MEGA MENU */}
-  {activeDropdown === "industries" && (
-    <div className="mega-menu industries-menu">
+            {/* INDUSTRIES MEGA MENU */}
+            {activeDropdown === "industries" && (
+              <div className="mega-menu industries-menu">
 
-      {/* LEFT CONTENT */}
-      <div className="industries-left">
+                {/* LEFT CONTENT */}
+                <div className="industries-left">
 
-        <h2>
-          Competitive, high-
-          <br />
-          performing
-        </h2>
+                  <h2>
+                    Competitive, high-
+                    <br />
+                    performing
+                  </h2>
 
-        <p>
-          How we help win in the
-          <br />
-          digital economy
-        </p>
+                  <p>
+                    How we help win in the
+                    <br />
+                    digital economy
+                  </p>
 
-        <button
-          className="touch-btn"
-          onClick={() => {
-            window.location.href = "/contact";
-          }}
-        >
-          GET IN TOUCH
-        </button>
+                  <button
+                    className="touch-btn"
+                    onClick={() => {
+                      window.location.href = "/contact";
+                    }}
+                  >
+                    GET IN TOUCH
+                  </button>
 
-      </div>
-
-
-      {/* INDUSTRIES COLUMN 1 */}
-      <div className="industries-column">
-
-        <a href="/industries">
-          INFORMATION TECHNOLOGY
-        </a>
-
-        <a href="/industries">
-          HEALTHCARE
-        </a>
-
-        <a href="/industries">
-          BANKING &amp; FINANCIAL SERVICES
-        </a>
-
-      </div>
+                </div>
 
 
-      {/* INDUSTRIES COLUMN 2 */}
-      <div className="industries-column">
+                {/* INDUSTRIES COLUMN 1 */}
+                <div className="industries-column">
 
-        <a href="/industries">
-          E-COMMERCE &amp; RETAIL
-        </a>
+                  <NavLink to="/industries" onClick={closeMenu}>
+                    INFORMATION TECHNOLOGY
+                  </NavLink>
 
-        <a href="/industries">
-          ENGINEERING &amp; MANUFACTURING
-        </a>
-
-        <a href="/industries">
-          TELECOMMUNICATIONS
-        </a>
-
-      </div>
+                  <NavLink to="/industries" onClick={closeMenu}>
+                    HEALTHCARE
+                  </NavLink>
+                  <NavLink to="/industries" onClick={closeMenu}>
+                    BANKING &amp; FINANCIAL SERVICES
+                  </NavLink>
 
 
-      {/* INDUSTRIES COLUMN 3 */}
-      <div className="industries-column">
+                </div>
 
-        <a href="/industries">
-          PROFESSIONAL SERVICES
-        </a>
 
-        <a href="/industries">
-          STARTUPS &amp; EMERGING BUSINESSES
-        </a>
+                {/* INDUSTRIES COLUMN 2 */}
+                <div className="industries-column">
 
-      </div>
 
-    </div>
-  )}
-</li>
+                  <NavLink to="/industries" onClick={closeMenu}>
+                    E-COMMERCE &amp; RETAIL
+                  </NavLink>
+                  <NavLink to="/industries" onClick={closeMenu}>
+                    ENGINEERING &amp; MANUFACTURING
+                  </NavLink>
+                  <NavLink to="/industries" onClick={closeMenu}>
+                    TELECOMMUNICATIONS
+                  </NavLink>
+
+
+
+                </div>
+
+
+                {/* INDUSTRIES COLUMN 3 */}
+                <div className="industries-column">
+
+
+                  <NavLink to="/industries" onClick={closeMenu}>
+                    PROFESSIONAL SERVICES
+                  </NavLink>
+                  <NavLink to="/industries" onClick={closeMenu}>
+                    STARTUPS &amp; EMERGING BUSINESSES
+                  </NavLink>
+
+
+
+                </div>
+
+              </div>
+            )}
+          </li>
 
           {/* COMPANY */}
           <li
@@ -315,9 +342,17 @@ const Navbar = () => {
 
             {activeDropdown === "company" && (
               <div className="simple-dropdown">
-                <a href="/careers">ABOUT US</a>
-                <a href="/careers">CAREERS</a>
-                <a href="/careers">CONTACT US</a>
+                <NavLink to="/about" onClick={closeMenu}>
+                  ABOUT US
+                </NavLink>
+
+                <NavLink to="/careers" onClick={closeMenu}>
+                  CAREERS
+                </NavLink>
+
+                <NavLink to="/contact" onClick={closeMenu}>
+                  CONTACT US
+                </NavLink>
               </div>
             )}
           </li>
