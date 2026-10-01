@@ -8,7 +8,7 @@ import {
 import { GrInstagram } from "react-icons/gr";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { NavLink } from "react-router-dom";
-import logo from "../assets/logo.png";
+import logo from "../assets/Logo.png";
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -315,9 +315,9 @@ const Navbar = () => {
 
             {activeDropdown === "company" && (
               <div className="simple-dropdown">
-                <a href="#">ABOUT US</a>
-                <a href="#">CAREERS</a>
-                <a href="#">CONTACT US</a>
+                <a href="/careers">ABOUT US</a>
+                <a href="/careers">CAREERS</a>
+                <a href="/careers">CONTACT US</a>
               </div>
             )}
           </li>
