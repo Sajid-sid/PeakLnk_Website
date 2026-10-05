@@ -1,0 +1,1493 @@
+/* =========================================================
+   ABOUT US PAGE
+   PeakLink Technologies
+   ========================================================= */
+
+.about-page {
+    width: 100%;
+    overflow: hidden;
+    background: #ffffff;
+    color: #12263a;
+}
+
+
+/* =========================================================
+   COMMON CONTAINER
+   ========================================================= */
+
+.about-container {
+    width: min(1180px, 92%);
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   COMMON SECTION STYLES
+   ========================================================= */
+
+.section-tag {
+    display: inline-block;
+    margin-bottom: 14px;
+
+    color: #17808a;
+
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+}
+
+.section-heading h2 {
+    margin: 0;
+
+    color: #12263a;
+
+    font-size: clamp(32px, 4vw, 48px);
+    line-height: 1.15;
+    font-weight: 700;
+}
+
+.section-heading h2 span {
+    color: #17808a;
+}
+
+.section-heading p {
+    max-width: 650px;
+    margin: 18px auto 0;
+
+    color: #617080;
+
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.center-heading {
+    text-align: center;
+}
+
+
+/* =========================================================
+   ABOUT US BANNER
+   ========================================================= */
+
+.about-banner {
+    width: 100%;
+    overflow: hidden;
+
+    background: #e5e5e5;
+
+    line-height: 0;
+}
+
+.about-banner-image {
+    display: block;
+
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+
+    object-fit: contain;
+}
+
+
+/* =========================================================
+   ABOUT INTRO
+   ========================================================= */
+
+.about-intro {
+    padding: 110px 0;
+
+    background: #ffffff;
+}
+
+.about-intro-main {
+    display: grid;
+
+    grid-template-columns: 0.85fr 1.15fr;
+
+    gap: 75px;
+
+    align-items: start;
+}
+
+
+/* =========================================================
+   LEFT VISUAL CARD
+   ========================================================= */
+
+.about-intro-visual {
+    position: relative;
+
+    min-height: 570px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 55px;
+
+    overflow: hidden;
+
+    background: #12263a;
+}
+
+
+/* Decorative circles */
+
+.visual-circle {
+    position: absolute;
+
+    border-radius: 50%;
+
+    pointer-events: none;
+}
+
+.circle-one {
+    width: 330px;
+    height: 330px;
+
+    top: -100px;
+    right: -120px;
+
+    border: 65px solid rgba(23, 128, 138, 0.22);
+}
+
+.circle-two {
+    width: 250px;
+    height: 250px;
+
+    left: -140px;
+    bottom: -130px;
+
+    border: 50px solid rgba(109, 210, 215, 0.08);
+}
+
+
+/* Visual content */
+
+.visual-content {
+    position: relative;
+    z-index: 2;
+}
+
+.visual-small-text {
+    display: inline-block;
+
+    margin-bottom: 30px;
+
+    color: #6dd2d7;
+
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.visual-content h3 {
+    margin: 0;
+
+    color: #ffffff;
+
+    font-size: clamp(42px, 4vw, 60px);
+    line-height: 1.05;
+    letter-spacing: -1px;
+}
+
+.visual-content h3 span {
+    color: #6dd2d7;
+}
+
+.visual-line {
+    width: 65px;
+    height: 3px;
+
+    margin: 35px 0 25px;
+
+    background: #17808a;
+}
+
+.visual-content p {
+    max-width: 320px;
+
+    margin: 0;
+
+    color: #bdcbd4;
+
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   RIGHT INTRO CONTENT
+   ========================================================= */
+
+.about-intro-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.intro-title {
+    max-width: 650px;
+
+    margin: 0 0 25px;
+
+    color: #12263a;
+
+    font-size: clamp(32px, 4vw, 48px);
+    line-height: 1.15;
+    letter-spacing: -0.8px;
+}
+
+.intro-title span {
+    color: #17808a;
+    display: block;
+}
+
+
+/* Paragraphs */
+
+.about-intro-content p {
+    margin: 0 0 20px;
+
+    color: #617080;
+
+    font-size: 16px;
+    line-height: 1.9;
+}
+
+.about-intro-content .intro-description {
+    margin-bottom: 20px;
+
+    color: #12263a;
+
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   RECRUITMENT PROCESS IMAGE
+   ========================================================= */
+
+.recruitment-process-image {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 30px 0 10px;
+}
+
+.recruitment-process-image img {
+    display: block;
+
+    width: 100%;
+    max-width: 430px;
+    height: auto;
+
+    object-fit: contain;
+}
+
+
+/* =========================================================
+   KEY POINTS
+   ========================================================= */
+
+.about-key-points {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 18px;
+
+    margin-top: 30px;
+    padding-top: 28px;
+
+    border-top: 1px solid #e5ebee;
+}
+
+.key-point {
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+.key-icon {
+    color: #17808a;
+
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.key-point h4 {
+    margin: 0 0 7px;
+
+    color: #12263a;
+
+    font-size: 15px;
+}
+
+.key-point p {
+    margin: 0;
+
+    color: #71808e;
+
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   MISSION / VISION
+   ========================================================= */
+
+.mission-section {
+    padding: 90px 0;
+
+    background: #f4f8f9;
+}
+
+.mission-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 30px;
+}
+
+.mission-card {
+    position: relative;
+
+    padding: 48px;
+
+    background: #ffffff;
+
+    border-top: 4px solid #17808a;
+
+    box-shadow: 0 12px 35px rgba(18, 38, 58, 0.06);
+}
+
+.vision-card {
+    border-top-color: #12263a;
+}
+
+.card-icon {
+    margin-bottom: 25px;
+
+    color: #17808a;
+
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.mission-card h2 {
+    margin: 0 0 18px;
+
+    color: #12263a;
+
+    font-size: 28px;
+    line-height: 1.3;
+}
+
+.mission-card p {
+    margin: 0;
+
+    color: #617080;
+
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   VALUES
+   ========================================================= */
+
+.values-section {
+    padding: 110px 0;
+
+    background: #ffffff;
+}
+
+.values-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 22px;
+
+    margin-top: 55px;
+}
+
+.value-card {
+    padding: 35px;
+
+    background: #ffffff;
+
+    border: 1px solid #e5ebee;
+
+    transition: all 0.3s ease;
+}
+
+.value-card:hover {
+    border-color: #17808a;
+
+    transform: translateY(-5px);
+
+    box-shadow: 0 15px 35px rgba(18, 38, 58, 0.08);
+}
+
+.value-number {
+    margin-bottom: 22px;
+
+    color: #17808a;
+
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.value-card h3 {
+    margin: 0 0 12px;
+
+    color: #12263a;
+
+    font-size: 20px;
+}
+
+.value-card p {
+    margin: 0;
+
+    color: #617080;
+
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   APPROACH
+   ========================================================= */
+
+.approach-section {
+    padding: 105px 0;
+
+    background: #12263a;
+}
+
+.approach-header {
+    display: grid;
+
+    grid-template-columns: 1fr 0.75fr;
+
+    gap: 70px;
+
+    align-items: end;
+
+    margin-bottom: 65px;
+}
+
+.approach-header h2 {
+    margin: 0;
+
+    color: #ffffff;
+
+    font-size: clamp(32px, 4vw, 48px);
+    line-height: 1.15;
+}
+
+.approach-header h2 span {
+    color: #6dd2d7;
+}
+
+.approach-header p {
+    margin: 0;
+
+    color: #c8d4dc;
+
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.approach-list {
+    display: grid;
+
+    grid-template-columns: repeat(5, 1fr);
+
+    gap: 1px;
+
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.approach-item {
+    min-height: 250px;
+
+    padding: 30px 25px;
+
+    background: #12263a;
+
+    transition: background 0.3s ease;
+}
+
+.approach-item:hover {
+    background: #17344e;
+}
+
+.approach-number {
+    margin-bottom: 45px;
+
+    color: #6dd2d7;
+
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.approach-text h3 {
+    margin: 0 0 12px;
+
+    color: #ffffff;
+
+    font-size: 20px;
+}
+
+.approach-text p {
+    margin: 0;
+
+    color: #b8c7d0;
+
+    font-size: 14px;
+    line-height: 1.75;
+}
+
+
+/* =========================================================
+   EXPERTISE
+   ========================================================= */
+
+.expertise-section {
+    padding: 110px 0;
+
+    background: #f4f8f9;
+}
+
+.expertise-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 30px;
+
+    margin-top: 55px;
+}
+
+.expertise-column {
+    padding: 45px;
+
+    background: #ffffff;
+
+    border: 1px solid #e2eaed;
+}
+
+.expertise-column h3 {
+    margin: 0 0 28px;
+
+    color: #12263a;
+
+    font-size: 26px;
+}
+
+.expertise-item {
+    display: flex;
+
+    gap: 13px;
+
+    align-items: center;
+
+    padding: 14px 0;
+
+    border-bottom: 1px solid #edf1f3;
+}
+
+.expertise-item span {
+    color: #17808a;
+
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.expertise-item p {
+    margin: 0;
+
+    color: #526373;
+
+    font-size: 14px;
+}
+
+.text-link {
+    display: inline-block;
+
+    margin-top: 28px;
+
+    color: #17808a;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    text-decoration: none;
+
+    transition: color 0.3s ease;
+}
+
+.text-link:hover {
+    color: #12263a;
+}
+
+
+/* =========================================================
+   CTA
+   ========================================================= */
+
+.about-cta {
+    padding: 100px 0;
+
+    background: #17808a;
+}
+
+.cta-content {
+    max-width: 850px;
+}
+
+.about-cta .section-tag {
+    color: #b9f1f2;
+}
+
+.about-cta h2 {
+    margin: 0;
+
+    color: #ffffff;
+
+    font-size: clamp(35px, 5vw, 56px);
+    line-height: 1.15;
+}
+
+.about-cta h2 span {
+    display: block;
+
+    color: #12263a;
+}
+
+.about-cta p {
+    max-width: 700px;
+
+    margin: 22px 0 30px;
+
+    color: #e7f7f7;
+
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   BUTTONS
+   ========================================================= */
+
+.cta-buttons {
+    display: flex;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+}
+
+.primary-btn,
+.outline-btn {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-height: 50px;
+
+    padding: 0 25px;
+
+    border-radius: 5px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition: all 0.3s ease;
+}
+
+.primary-btn {
+    color: #ffffff;
+
+    background: #12263a;
+}
+
+.primary-btn:hover {
+    background: #0d1d2d;
+
+    transform: translateY(-2px);
+}
+
+.outline-btn {
+    color: #ffffff;
+
+    border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.outline-btn:hover {
+    color: #12263a;
+
+    background: #ffffff;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1000px) {
+
+    /* About intro */
+
+    .about-intro {
+        padding: 90px 0;
+    }
+
+    .about-intro-main {
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+    }
+
+    .about-intro-visual {
+        min-height: 450px;
+    }
+
+    .recruitment-process-image img {
+        max-width: 450px;
+    }
+
+
+    /* Values */
+
+    .values-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* Approach */
+
+    .approach-header {
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+    }
+
+    .approach-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .approach-item:last-child {
+        grid-column: span 2;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    .about-container {
+        width: min(92%, 560px);
+    }
+
+
+    /* Banner */
+
+    .about-banner-image {
+        width: 100%;
+        height: auto;
+    }
+
+
+    /* Intro */
+
+    .about-intro {
+        padding: 75px 0;
+    }
+
+    .about-intro-main {
+        gap: 40px;
+    }
+
+    .about-intro-visual {
+        min-height: 430px;
+
+        padding: 35px;
+    }
+
+    .visual-content h3 {
+        font-size: 43px;
+    }
+
+    .about-intro-content p {
+        font-size: 15px;
+
+        line-height: 1.8;
+    }
+
+    .about-intro-content .intro-description {
+        font-size: 17px;
+    }
+
+    .intro-title {
+        font-size: 34px;
+    }
+
+
+    /* Recruitment process */
+
+    .recruitment-process-image {
+        margin-top: 25px;
+    }
+
+    .recruitment-process-image img {
+        width: 100%;
+        max-width: 400px;
+    }
+
+
+    /* Key points */
+
+    .about-key-points {
+        grid-template-columns: 1fr;
+
+        gap: 22px;
+    }
+
+
+    /* Mission / Vision */
+
+    .mission-section {
+        padding: 70px 0;
+    }
+
+    .mission-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .mission-card {
+        padding: 35px 28px;
+    }
+
+
+    /* Values */
+
+    .values-section {
+        padding: 75px 0;
+    }
+
+    .values-grid {
+        grid-template-columns: 1fr;
+
+        margin-top: 40px;
+    }
+
+    .value-card {
+        padding: 30px;
+    }
+
+
+    /* Approach */
+
+    .approach-section {
+        padding: 75px 0;
+    }
+
+    .approach-header {
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+
+        margin-bottom: 40px;
+    }
+
+    .approach-list {
+        grid-template-columns: 1fr;
+    }
+
+    .approach-item {
+        min-height: auto;
+
+        padding: 30px;
+    }
+
+    .approach-item:last-child {
+        grid-column: auto;
+    }
+
+    .approach-number {
+        margin-bottom: 20px;
+    }
+
+
+    /* Expertise */
+
+    .expertise-section {
+        padding: 75px 0;
+    }
+
+    .expertise-grid {
+        grid-template-columns: 1fr;
+
+        margin-top: 40px;
+    }
+
+    .expertise-column {
+        padding: 30px 25px;
+    }
+
+
+    /* CTA */
+
+    .about-cta {
+        padding: 75px 0;
+    }
+
+    .about-cta h2 {
+        font-size: 38px;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+    .primary-btn,
+    .outline-btn {
+        width: 100%;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 420px) {
+
+    .about-container {
+        width: 90%;
+    }
+
+    .visual-content h3 {
+        font-size: 38px;
+    }
+
+    .visual-small-text {
+        font-size: 10px;
+    }
+
+    .intro-title {
+        font-size: 31px;
+    }
+
+    .section-heading h2 {
+        font-size: 32px;
+    }
+
+    .mission-card h2 {
+        font-size: 24px;
+    }
+
+    .about-cta h2 {
+        font-size: 33px;
+    }
+
+}
+
+/* =========================================================
+   OUR APPROACH
+   ========================================================= */
+
+.approach-section {
+    position: relative;
+
+    padding: 110px 0 120px;
+
+    background: #f5f8fa;
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   BACKGROUND DECORATION
+   ========================================================= */
+
+.approach-section::before {
+    content: "";
+
+    position: absolute;
+
+    width: 420px;
+    height: 420px;
+
+    top: -220px;
+    right: -180px;
+
+    border: 65px solid rgba(23, 128, 138, 0.06);
+
+    border-radius: 50%;
+
+    pointer-events: none;
+}
+
+.approach-section::after {
+    content: "";
+
+    position: absolute;
+
+    width: 300px;
+    height: 300px;
+
+    bottom: -180px;
+    left: -160px;
+
+    border: 50px solid rgba(18, 38, 58, 0.035);
+
+    border-radius: 50%;
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.approach-header {
+    position: relative;
+    z-index: 2;
+
+    display: grid;
+
+    grid-template-columns: 1fr 0.75fr;
+
+    gap: 80px;
+
+    align-items: end;
+
+    margin-bottom: 75px;
+}
+
+.approach-header h2 {
+    margin: 0;
+
+    color: #12263a;
+
+    font-size: clamp(36px, 4vw, 52px);
+
+    line-height: 1.12;
+
+    letter-spacing: -1px;
+}
+
+.approach-header h2 span {
+    display: block;
+
+    color: #17808a;
+}
+
+.approach-header p {
+    max-width: 500px;
+
+    margin: 0;
+
+    color: #657582;
+
+    font-size: 16px;
+
+    line-height: 1.85;
+}
+
+
+/* =========================================================
+   PROCESS CONTAINER
+   ========================================================= */
+
+.approach-process {
+    position: relative;
+    z-index: 2;
+
+    display: grid;
+
+    grid-template-columns: repeat(5, 1fr);
+
+    gap: 0;
+}
+
+
+/* =========================================================
+   INDIVIDUAL STEP
+   ========================================================= */
+
+.approach-step {
+    position: relative;
+
+    min-width: 0;
+}
+
+
+/* =========================================================
+   NUMBER + CONNECTOR
+   ========================================================= */
+
+.approach-step-top {
+    position: relative;
+
+    height: 70px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+
+/* Number circle */
+
+.approach-number {
+    position: relative;
+
+    z-index: 3;
+
+    width: 66px;
+    height: 66px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    color: #ffffff;
+
+    background: #12263a;
+
+    border: 6px solid #f5f8fa;
+
+    border-radius: 50%;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    box-shadow:
+        0 0 0 1px #d6e0e5,
+        0 8px 20px rgba(18, 38, 58, 0.12);
+
+    transition: all 0.3s ease;
+}
+
+
+/* =========================================================
+   CONNECTING LINE
+   ========================================================= */
+
+.approach-connector {
+    position: absolute;
+
+    z-index: 1;
+
+    top: 50%;
+
+    left: 50%;
+
+    width: 100%;
+
+    height: 2px;
+
+    background: #d5e1e5;
+
+    transform: translateY(-50%);
+}
+
+
+/* Teal progress part */
+
+.approach-connector::before {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    top: 0;
+
+    width: 45%;
+
+    height: 100%;
+
+    background: #17808a;
+
+    opacity: 0.35;
+}
+
+
+/* =========================================================
+   STEP CARD
+   ========================================================= */
+
+.approach-card {
+    position: relative;
+
+    min-height: 220px;
+
+    margin: 18px 10px 0;
+
+    padding: 30px 25px;
+
+    background: #ffffff;
+
+    border: 1px solid #e1e9ed;
+
+    border-radius: 8px;
+
+    text-align: center;
+
+    box-shadow: 0 8px 25px rgba(18, 38, 58, 0.05);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+
+/* Small top pointer */
+
+.approach-card::before {
+    content: "";
+
+    position: absolute;
+
+    top: -7px;
+
+    left: 50%;
+
+    width: 13px;
+    height: 13px;
+
+    background: #ffffff;
+
+    border-left: 1px solid #e1e9ed;
+    border-top: 1px solid #e1e9ed;
+
+    transform: translateX(-50%) rotate(45deg);
+}
+
+
+/* =========================================================
+   CARD TEXT
+   ========================================================= */
+
+.approach-card h3 {
+    position: relative;
+
+    margin: 0 0 15px;
+
+    color: #12263a;
+
+    font-size: 20px;
+
+    line-height: 1.3;
+
+    font-weight: 700;
+}
+
+.approach-card p {
+    position: relative;
+
+    margin: 0;
+
+    color: #6a7a87;
+
+    font-size: 14px;
+
+    line-height: 1.75;
+}
+
+
+/* =========================================================
+   HOVER
+   ========================================================= */
+
+.approach-step:hover .approach-number {
+    color: #ffffff;
+
+    background: #17808a;
+
+    transform: scale(1.08);
+
+    box-shadow:
+        0 0 0 1px #17808a,
+        0 10px 25px rgba(23, 128, 138, 0.22);
+}
+
+.approach-step:hover .approach-card {
+    border-color: rgba(23, 128, 138, 0.45);
+
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 18px 35px rgba(18, 38, 58, 0.10);
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1050px) {
+
+    .approach-header {
+        grid-template-columns: 1fr 1fr;
+
+        gap: 45px;
+    }
+
+    .approach-process {
+        grid-template-columns: repeat(3, 1fr);
+
+        row-gap: 50px;
+    }
+
+    .approach-connector {
+        display: none;
+    }
+
+    .approach-card {
+        min-height: 210px;
+    }
+}
+
+
+/* =========================================================
+   SMALL TABLET
+   ========================================================= */
+
+@media (max-width: 800px) {
+
+    .approach-section {
+        padding: 85px 0 95px;
+    }
+
+    .approach-header {
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+
+        margin-bottom: 55px;
+    }
+
+    .approach-header p {
+        max-width: 650px;
+    }
+
+    .approach-process {
+        grid-template-columns: repeat(2, 1fr);
+
+        row-gap: 40px;
+    }
+
+    .approach-step-top {
+        height: 65px;
+    }
+
+    .approach-card {
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .approach-section {
+        padding: 70px 0 80px;
+    }
+
+    .approach-header {
+        margin-bottom: 45px;
+    }
+
+    .approach-header h2 {
+        font-size: 34px;
+    }
+
+    .approach-header p {
+        font-size: 15px;
+    }
+
+    .approach-process {
+        grid-template-columns: 1fr;
+
+        gap: 28px;
+    }
+
+    .approach-step-top {
+        height: 65px;
+    }
+
+    .approach-number {
+        width: 62px;
+        height: 62px;
+    }
+
+    .approach-card {
+        min-height: auto;
+
+        margin: 15px 0 0;
+
+        padding: 28px 25px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 400px) {
+
+    .approach-header h2 {
+        font-size: 31px;
+    }
+
+    .approach-card {
+        padding: 25px 20px;
+    }
+
+}

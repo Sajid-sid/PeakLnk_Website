@@ -120,38 +120,291 @@
     color: #ffffff;
 }
 
-
-/* =========================
-   INTRO
-========================= */
+/* =========================================================
+   INTRO - PREMIUM PRESENTATION
+========================================================= */
 
 .career-intro {
-    padding: 100px 0;
+    padding: 20px 0 90px;
     background: #ffffff;
+    position: relative;
+    overflow: hidden;
 }
 
-.intro-grid {
+.career-intro::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 240px;
+    height: 240px;
+    background: #17808a;
+    opacity: 0.05;
+    border-radius: 0 0 0 100%;
+}
+
+
+/* TOP CONTENT */
+
+.intro-top {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 80px;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 70px;
     align-items: center;
+    padding-bottom: 40px;
 }
 
-.career-intro h2,
-.section-heading h2,
-.areas-content h2,
-.join-peaklink h2 {
-    font-size: 46px;
-    line-height: 1.15;
-    margin: 18px 0 25px;
+
+/* LEFT HEADING */
+
+.intro-heading {
+    position: relative;
+}
+
+.intro-heading .section-label {
+    display: inline-block;
+    margin-bottom: 22px;
+    color: #17808a;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+}
+
+.intro-heading h2 {
+    margin: 0;
+    max-width: 520px;
     color: #12263a;
+    font-size: clamp(40px, 4.5vw, 60px);
+    line-height: 1.08;
+    font-weight: 700;
+    letter-spacing: -1.5px;
 }
 
-.intro-grid p {
-    font-size: 17px;
+.intro-heading h2 span {
+    color: #17808a;
+}
+
+
+/* RIGHT DESCRIPTION */
+
+.intro-description {
+    position: relative;
+
+    padding-left: 35px;
+
+    max-width: 650px;
+}
+
+.intro-line {
+    position: absolute;
+
+    left: 0;
+    top: 5px;
+
+    width: 3px;
+    height: 85%;
+
+    background: #17808a;
+
+    border-radius: 10px;
+}
+
+.intro-description p {
+    margin: 0 0 18px;
+
+    color: #5d6975;
+
+    font-size: 16px;
+
     line-height: 1.8;
+}
+
+.intro-description .intro-main-text {
     color: #12263a;
-    margin-bottom: 18px;
+
+    font-size: 19px;
+
+    line-height: 1.7;
+
+    font-weight: 500;
+}
+
+
+/* =========================================================
+   HIGHLIGHTS
+========================================================= */
+
+.intro-highlights {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    border-top: 1px solid #dce7e8;
+
+    padding-top: 40px;
+}
+
+.intro-highlight {
+    display: flex;
+
+    gap: 18px;
+
+    padding: 0 35px;
+
+    border-right: 1px solid #dce7e8;
+}
+
+.intro-highlight:first-child {
+    padding-left: 0;
+}
+
+.intro-highlight:last-child {
+    border-right: none;
+}
+
+
+/* NUMBER */
+
+.highlight-number {
+    flex-shrink: 0;
+
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #12263a;
+
+    color: #ffffff;
+
+    font-size: 12px;
+
+    font-weight: 700;
+}
+
+.intro-highlight h3 {
+    margin: 0 0 8px;
+
+    color: #12263a;
+
+    font-size: 16px;
+
+    font-weight: 700;
+}
+
+.intro-highlight p {
+    margin: 0;
+
+    color: #6b7785;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   HOVER EFFECT
+========================================================= */
+
+.intro-highlight {
+    transition: transform 0.3s ease;
+}
+
+.intro-highlight:hover {
+    transform: translateY(-4px);
+}
+
+.intro-highlight:hover .highlight-number {
+    background: #17808a;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .intro-top {
+        grid-template-columns: 1fr;
+
+        gap: 45px;
+    }
+
+    .intro-heading h2 {
+        max-width: 700px;
+    }
+
+    .intro-description {
+        max-width: 750px;
+    }
+
+    .intro-highlights {
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+    }
+
+    .intro-highlight {
+        padding: 20px 0;
+
+        border-right: none;
+
+        border-bottom: 1px solid #dce7e8;
+    }
+
+    .intro-highlight:last-child {
+        border-bottom: none;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+    .career-intro {
+        padding: 75px 0;
+    }
+
+    .intro-top {
+        padding-bottom: 50px;
+    }
+
+    .intro-heading h2 {
+        font-size: 38px;
+        letter-spacing: -0.8px;
+    }
+
+    .intro-description {
+        padding-left: 25px;
+    }
+
+    .intro-description .intro-main-text {
+        font-size: 16px;
+    }
+
+    .intro-description p {
+        font-size: 14px;
+    }
+
+    .intro-highlight {
+        gap: 14px;
+    }
+
+    .highlight-number {
+        width: 38px;
+        height: 38px;
+
+        font-size: 11px;
+    }
 }
 
 

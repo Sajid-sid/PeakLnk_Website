@@ -113,7 +113,7 @@ ${formData.message}`
 
             {/* =========================
           HERO
-      ========================= */}
+========================= */}
             <section className="careers-hero">
                 <div className="careers-hero-overlay"></div>
 
@@ -151,9 +151,6 @@ ${formData.message}`
                 </div>
             </section>
 
-            {/* =========================
-    RECRUITMENT PROCESS
-========================= */}
             {/* =========================
     RECRUITMENT PROCESS
 ========================= */}
@@ -230,34 +227,89 @@ ${formData.message}`
             </section>
 
             {/* =========================
-          INTRO
-      ========================= */}
+    INTRO
+========================= */}
             <section className="career-intro">
-                <div className="section-container intro-grid">
+                <div className="section-container">
 
-                    <div>
-                        <span className="section-label">
-                            YOUR NEXT OPPORTUNITY
-                        </span>
+                    <div className="intro-top">
 
-                        <h2>
-                            Connecting Talent With
-                            <span> Opportunity</span>
-                        </h2>
+                        {/* LEFT */}
+                        <div className="intro-heading">
+                            <span className="section-label">
+                                YOUR NEXT OPPORTUNITY
+                            </span>
+
+                            <h2>
+                                Connecting Talent
+                                <br />
+                                With <span>Opportunity</span>
+                            </h2>
+                        </div>
+
+                        {/* RIGHT */}
+                        <div className="intro-description">
+
+                            <div className="intro-line"></div>
+
+                            <p className="intro-main-text">
+                                Whether you are an experienced technology professional
+                                or an emerging talent looking for your next opportunity,
+                                our recruitment team can help you discover relevant roles.
+                            </p>
+
+                            <p>
+                                We work with organizations across technology and business
+                                functions to connect skilled professionals with meaningful
+                                career opportunities.
+                            </p>
+
+                        </div>
+
                     </div>
 
-                    <div>
-                        <p>
-                            Whether you are an experienced technology professional
-                            or an emerging talent looking for your next opportunity,
-                            our recruitment team can help you discover relevant roles.
-                        </p>
 
-                        <p>
-                            We work with organizations across technology and business
-                            functions to connect skilled professionals with meaningful
-                            career opportunities.
-                        </p>
+                    {/* HIGHLIGHTS */}
+                    <div className="intro-highlights">
+
+                        <div className="intro-highlight">
+                            <div className="highlight-number">01</div>
+
+                            <div>
+                                <h3>Relevant Opportunities</h3>
+                                <p>
+                                    Discover roles aligned with your skills,
+                                    experience and career goals.
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <div className="intro-highlight">
+                            <div className="highlight-number">02</div>
+
+                            <div>
+                                <h3>Expert Guidance</h3>
+                                <p>
+                                    Get support from recruitment specialists
+                                    throughout your career journey.
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <div className="intro-highlight">
+                            <div className="highlight-number">03</div>
+
+                            <div>
+                                <h3>Career Support</h3>
+                                <p>
+                                    From opportunity discovery to interview
+                                    coordination, we help you move forward.
+                                </p>
+                            </div>
+                        </div>
+
                     </div>
 
                 </div>
@@ -265,7 +317,7 @@ ${formData.message}`
 
             {/* =========================
           OPEN POSITIONS
-      ========================= */}
+========================= */}
             <section
                 className="open-positions"
                 id="open-positions"
@@ -418,7 +470,7 @@ ${formData.message}`
 
             {/* =========================
           CAREER AREAS
-      ========================= */}
+========================= */}
             <section className="career-areas">
 
                 <div className="section-container areas-grid">
@@ -474,7 +526,7 @@ ${formData.message}`
 
             {/* =========================
           RESUME CTA
-      ========================= */}
+========================= */}
             <section
                 className="resume-section"
                 id="submit-resume"
@@ -516,7 +568,7 @@ ${formData.message}`
 
             {/* =========================
           JOIN PEAKLINK
-      ========================= */}
+========================= */}
             <section className="join-peaklink">
 
                 <div className="section-container">
@@ -560,7 +612,7 @@ ${formData.message}`
 
             {/* =========================
           CHAT SUPPORT
-      ========================= */}
+========================= */}
             <div className="chat-support-wrapper">
 
                 {isChatOpen && (

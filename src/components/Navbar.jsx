@@ -28,7 +28,7 @@ const Navbar = () => {
     <header className="navbar-wrapper">
       <nav className="navbar">
 
-       
+
         {/* LOGO */}
         <div className="logo">
           <NavLink to="/" onClick={closeMenu}>
@@ -245,9 +245,9 @@ const Navbar = () => {
             onMouseEnter={() => setActiveDropdown("company")}
             onMouseLeave={() => setActiveDropdown(null)}
           >
-            <button onClick={() => toggleDropdown("company")}>
+            <NavLink to="/about" onClick={closeMenu}>
               COMPANY
-            </button>
+            </NavLink>
 
             {activeDropdown === "company" && (
               <div className="simple-dropdown">
