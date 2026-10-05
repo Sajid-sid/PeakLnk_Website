@@ -14,7 +14,9 @@ import Staffing from "./components/Staffing";
 
 import Payroll from "./components/Payroll";
 import Resources from "./components/Resources";
-
+import EcommerceRetail from "./pages/Ecommerce";
+import Engineering from "./pages/Engineering";
+import Telecom from "./pages/Telecom"
 function App() {
   return (
     <>
@@ -32,6 +34,15 @@ function App() {
 
         <Route path="/payroll" element={<Payroll />} />
          <Route path="/resources" element={<Resources />} />
+          <Route path="/ecommerce-retail" element={<EcommerceRetail />} />
+        <Route
+  path="/engineering"
+  element={<Engineering />}
+/>
+<Route
+  path="/telecommunications"
+  element={<Telecom/>}
+/>
       </Routes>
 
       <Footer />

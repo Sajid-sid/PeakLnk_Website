@@ -148,9 +148,9 @@ const Navbar = () => {
             onMouseEnter={() => setActiveDropdown("industries")}
             onMouseLeave={() => setActiveDropdown(null)}
           >
-            <button onClick={() => toggleDropdown("industries")}>
-              INDUSTRIES <span>v</span>
-            </button>
+                      <NavLink to="/industries" onClick={closeMenu}>
+  INDUSTRIES <span>v</span>
+</NavLink>
 
             {/* INDUSTRIES MEGA MENU */}
             {activeDropdown === "industries" && (
@@ -205,15 +205,19 @@ const Navbar = () => {
                 <div className="industries-column">
 
 
-                  <NavLink to="/industries" onClick={closeMenu}>
-                    E-COMMERCE &amp; RETAIL
-                  </NavLink>
-                  <NavLink to="/industries" onClick={closeMenu}>
+                
+           <NavLink to="/ecommerce-retail" onClick={closeMenu}>
+  E-COMMERCE &amp; RETAIL
+</NavLink>
+                  <NavLink to="/engineering" onClick={closeMenu}>
                     ENGINEERING &amp; MANUFACTURING
                   </NavLink>
-                  <NavLink to="/industries" onClick={closeMenu}>
-                    TELECOMMUNICATIONS
-                  </NavLink>
+               <NavLink
+  to="/telecommunications"
+  onClick={closeMenu}
+>
+  TELECOMMUNICATIONS
+</NavLink>
 
 
 

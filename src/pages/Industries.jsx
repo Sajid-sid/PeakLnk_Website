@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import "../styles/industries.css";
+import IT from "../assets/IT.webp"
 export const industries = [
   {
     title: "Information Technology",
@@ -14,6 +15,7 @@ export const industries = [
       "Cybersecurity",
       "IT Infrastructure",
     ],
+    image:IT
   },
   {
     title: "Healthcare",
@@ -257,17 +259,20 @@ useEffect(() => {
 
               <div className="industry-visual">
 
-                <div className="visual-content">
+            <div className="visual-content">
 
-                  <span>
-                    {String(index + 1).padStart(2, "0")}
-                  </span>
+  <span>
+    {String(index + 1).padStart(2, "0")}
+  </span>
 
-                  <h3>
-                    {industry.title}
-                  </h3>
+  {industry.image && (
+    <img
+      src={industry.image}
+      alt={industry.title}
+    />
+  )}
 
-                </div>
+</div>
 
               </div>
 

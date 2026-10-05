@@ -1,0 +1,1299 @@
+/* =========================================================
+   TELECOMMUNICATIONS PAGE — WHITE THEME
+========================================================= */
+
+.telecommunications-page {
+  width: 100%;
+  min-height: 100vh;
+  background: #ffffff;
+  color: #16242b;
+  overflow: hidden;
+}
+
+/* =========================================================
+   COMMON
+========================================================= */
+
+.tel-section-label {
+  display: inline-block;
+  margin-bottom: 14px;
+  color: #168b9b;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.tel-section-heading {
+  margin: 0;
+  color: #10252d;
+  font-size: clamp(30px, 4vw, 48px);
+  line-height: 1.15;
+  font-weight: 700;
+}
+
+.tel-animate {
+  opacity: 0;
+  transform: translateY(35px);
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s ease;
+}
+
+.tel-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.tel-hero {
+  position: relative;
+  min-height: 680px;
+  padding: 100px 7% 90px;
+
+  display: flex;
+  align-items: center;
+
+  background:
+    radial-gradient(
+      circle at 75% 45%,
+      rgba(40, 117, 129, 0.24),
+      transparent 32%
+    ),
+    linear-gradient(
+      125deg,
+      #071923 0%,
+      #0a202c 50%,
+      #0d3542 100%
+    );
+
+  overflow: hidden;
+}
+
+.tel-hero::before {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  right: -180px;
+  top: -220px;
+  border-radius: 50%;
+  border: 1px solid rgba(22, 139, 155, 0.12);
+
+  box-shadow:
+    0 0 80px rgba(22, 139, 155, 0.06),
+    inset 0 0 80px rgba(22, 139, 155, 0.04);
+}
+
+.tel-hero::after {
+  content: "";
+  position: absolute;
+  width: 280px;
+  height: 280px;
+  left: -150px;
+  bottom: -130px;
+  border-radius: 50%;
+  border: 1px solid rgba(22, 139, 155, 0.1);
+}
+
+.tel-hero-content {
+  position: relative;
+  z-index: 2;
+  width: 52%;
+  max-width: 720px;
+  animation: telHeroText 0.9s ease forwards;
+}
+
+.tel-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  color: #168b9b;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.tel-label::before {
+  content: "";
+  width: 34px;
+  height: 2px;
+  background: #168b9b;
+}
+
+.tel-hero h1 {
+  margin: 0 0 24px;
+  max-width: 750px;
+  color: #f4f6f7;
+  font-size: clamp(42px, 5vw, 72px);
+  line-height: 1.05;
+  font-weight: 750;
+  letter-spacing: -1.5px;
+}
+
+.tel-hero h1 span {
+  color: #168b9b;
+}
+
+.tel-hero p {
+  max-width: 650px;
+  margin: 0;
+  color: #5d747c;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.tel-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 35px;
+}
+
+.tel-primary-btn,
+.tel-secondary-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 145px;
+  padding: 14px 25px;
+  border-radius: 7px;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+
+  transition:
+    transform 0.3s ease,
+    background 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.tel-primary-btn {
+  color: #ffffff;
+  background: #168b9b;
+  border: 1px solid #168b9b;
+}
+
+.tel-primary-btn:hover {
+  transform: translateY(-3px);
+  background: #117985;
+
+  box-shadow:
+    0 10px 30px rgba(22, 139, 155, 0.22);
+}
+
+.tel-secondary-btn {
+  color: #168b9b;
+  background: #ffffff;
+  border: 1px solid rgba(22, 139, 155, 0.35);
+}
+
+.tel-secondary-btn:hover {
+  transform: translateY(-3px);
+  background: #f0fafb;
+  border-color: #168b9b;
+
+  box-shadow:
+    0 8px 24px rgba(22, 139, 155, 0.1);
+}
+
+/* =========================================================
+   HERO NETWORK VISUAL
+========================================================= */
+
+.tel-hero-visual {
+  position: absolute;
+  z-index: 1;
+  right: 5%;
+  width: 45%;
+  height: 540px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: telHeroVisual 1.1s ease forwards;
+}
+
+.tel-network {
+  position: relative;
+  width: 390px;
+  height: 390px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tel-network-ring {
+  position: absolute;
+  border: 1px solid rgba(22, 139, 155, 0.2);
+  border-radius: 50%;
+}
+
+.ring-one {
+  width: 180px;
+  height: 180px;
+  animation: telRingPulse 4s ease-in-out infinite;
+}
+
+.ring-two {
+  width: 280px;
+  height: 280px;
+  animation: telRingPulse 5s ease-in-out infinite 0.5s;
+}
+
+.ring-three {
+  width: 380px;
+  height: 380px;
+  animation: telRingPulse 6s ease-in-out infinite 1s;
+}
+
+.tel-network-center {
+  position: absolute;
+  z-index: 5;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+
+  color: #ffffff;
+  background: #168b9b;
+
+  font-size: 14px;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 0.5px;
+
+  box-shadow:
+    0 0 35px rgba(22, 139, 155, 0.25),
+    0 0 80px rgba(22, 139, 155, 0.08);
+}
+
+.tel-node {
+  position: absolute;
+  z-index: 4;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+
+  background: #ffffff;
+  border: 1px solid rgba(22, 139, 155, 0.5);
+
+  box-shadow:
+    0 5px 20px rgba(16, 37, 45, 0.1);
+
+  animation: telNodePulse 3s ease-in-out infinite;
+}
+
+.tel-node::after {
+  content: "";
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #168b9b;
+
+  box-shadow:
+    0 0 12px rgba(22, 139, 155, 0.55);
+}
+
+.node-one {
+  top: 20px;
+  left: 170px;
+}
+
+.node-two {
+  top: 165px;
+  right: 0;
+  animation-delay: 0.7s;
+}
+
+.node-three {
+  bottom: 20px;
+  left: 170px;
+  animation-delay: 1.4s;
+}
+
+.node-four {
+  top: 165px;
+  left: 0;
+  animation-delay: 2.1s;
+}
+
+/* =========================================================
+   NETWORK CONNECTION LINES
+========================================================= */
+
+.tel-line {
+  position: absolute;
+  z-index: 2;
+  height: 1px;
+
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(22, 139, 155, 0.5),
+    transparent
+  );
+
+  transform-origin: center;
+}
+
+.line-one {
+  width: 150px;
+  top: 105px;
+  left: 120px;
+  transform: rotate(43deg);
+}
+
+.line-two {
+  width: 150px;
+  top: 105px;
+  right: 120px;
+  transform: rotate(-43deg);
+}
+
+.line-three {
+  width: 150px;
+  bottom: 105px;
+  left: 120px;
+  transform: rotate(-43deg);
+}
+
+.line-four {
+  width: 150px;
+  bottom: 105px;
+  right: 120px;
+  transform: rotate(43deg);
+}
+
+/* =========================================================
+   FLOATING CARDS
+========================================================= */
+
+.tel-floating-card {
+  position: absolute;
+  z-index: 8;
+  padding: 13px 18px;
+  border-radius: 9px;
+
+  color: #315861;
+
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid rgba(22, 139, 155, 0.18);
+
+  backdrop-filter: blur(12px);
+
+  box-shadow:
+    0 15px 40px rgba(16, 37, 45, 0.12);
+
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+}
+
+.tel-card-top {
+  top: 55px;
+  right: 20px;
+  animation: telFloat 4s ease-in-out infinite;
+}
+
+.tel-card-right {
+  right: -15px;
+  bottom: 105px;
+  animation: telFloat 4.5s ease-in-out infinite 0.8s;
+}
+
+.tel-card-bottom {
+  bottom: 25px;
+  left: 40px;
+  animation: telFloat 5s ease-in-out infinite 1.4s;
+}
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+.tel-intro {
+  position: relative;
+  padding: 100px 7%;
+  background: #ffffff;
+}
+
+.tel-intro-grid {
+  max-width: 1250px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.tel-intro-text p {
+  max-width: 720px;
+  margin-top: 25px;
+  color: #60777e;
+  font-size: 17px;
+  line-height: 1.85;
+}
+
+.tel-stat-box {
+  position: relative;
+  padding: 45px 35px;
+  border-radius: 15px;
+
+  background:
+    linear-gradient(
+      145deg,
+      #f2fafb,
+      #ffffff
+    );
+
+  border: 1px solid rgba(22, 139, 155, 0.16);
+
+  box-shadow:
+    0 25px 60px rgba(16, 37, 45, 0.1);
+
+  text-align: center;
+}
+
+.tel-stat-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 15%;
+  right: 15%;
+  height: 1px;
+
+  background: linear-gradient(
+    90deg,
+    transparent,
+    #168b9b,
+    transparent
+  );
+}
+
+.tel-stat-box strong {
+  display: block;
+  margin-bottom: 10px;
+  color: #168b9b;
+  font-size: 52px;
+  line-height: 1;
+}
+
+.tel-stat-box span {
+  color: #60777e;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* =========================================================
+   CAPABILITIES
+========================================================= */
+
+.tel-capabilities {
+  padding: 105px 7%;
+
+  background:
+    linear-gradient(
+      180deg,
+      #f8fcfd 0%,
+      #eef8fa 100%
+    );
+}
+
+.tel-section-heading-wrap {
+  max-width: 1250px;
+  margin: 0 auto 55px;
+}
+
+.tel-capability-grid {
+  max-width: 1250px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.tel-capability-card {
+  position: relative;
+  min-height: 220px;
+  padding: 30px;
+  border-radius: 12px;
+
+  background: #ffffff;
+  border: 1px solid rgba(22, 139, 155, 0.13);
+
+  box-shadow:
+    0 8px 25px rgba(16, 37, 45, 0.05);
+
+  transition:
+    transform 0.35s ease,
+    border-color 0.35s ease,
+    background 0.35s ease,
+    box-shadow 0.35s ease;
+
+  overflow: hidden;
+}
+
+.tel-capability-card::after {
+  content: "";
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  right: -40px;
+  bottom: -40px;
+  border-radius: 50%;
+  background: rgba(22, 139, 155, 0.06);
+}
+
+.tel-capability-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(22, 139, 155, 0.4);
+  background: #ffffff;
+
+  box-shadow:
+    0 18px 45px rgba(16, 37, 45, 0.12);
+}
+
+.tel-capability-icon {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+
+  color: #168b9b;
+  background: rgba(22, 139, 155, 0.08);
+  border: 1px solid rgba(22, 139, 155, 0.14);
+
+  font-size: 20px;
+}
+
+.tel-capability-card h3 {
+  margin: 0 0 10px;
+  color: #10252d;
+  font-size: 19px;
+}
+
+.tel-capability-card p {
+  margin: 0;
+  color: #71878d;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* =========================================================
+   TALENT AREAS
+========================================================= */
+
+.tel-talent {
+  padding: 105px 7%;
+  background: #ffffff;
+}
+
+.tel-talent-grid {
+  max-width: 1250px;
+  margin: 55px auto 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.tel-talent-card {
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+
+  border-radius: 10px;
+
+  background: #f6fbfc;
+  border: 1px solid rgba(22, 139, 155, 0.12);
+
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    background 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.tel-talent-card:hover {
+  transform: translateY(-5px);
+  background: #ffffff;
+  border-color: rgba(22, 139, 155, 0.35);
+
+  box-shadow:
+    0 12px 30px rgba(16, 37, 45, 0.08);
+}
+
+.tel-talent-card span:first-child {
+  width: 42px;
+  height: 42px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  color: #ffffff;
+  background: #168b9b;
+
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.tel-talent-card h3 {
+  margin: 0;
+  color: #20363e;
+  font-size: 16px;
+}
+
+/* =========================================================
+   HIRING TYPES
+========================================================= */
+
+.tel-hiring {
+  padding: 105px 7%;
+
+  background:
+    linear-gradient(
+      135deg,
+      #f0f9fa 0%,
+      #ffffff 100%
+    );
+}
+
+.tel-hiring-grid {
+  max-width: 1250px;
+  margin: 55px auto 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.tel-hiring-item {
+  position: relative;
+  min-height: 220px;
+  padding: 30px 25px;
+  border-radius: 12px;
+
+  background: #ffffff;
+  border: 1px solid rgba(22, 139, 155, 0.12);
+
+  box-shadow:
+    0 8px 25px rgba(16, 37, 45, 0.05);
+
+  transition:
+    transform 0.35s ease,
+    border-color 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.tel-hiring-item:hover {
+  transform: translateY(-7px);
+  border-color: rgba(22, 139, 155, 0.4);
+
+  box-shadow:
+    0 16px 35px rgba(16, 37, 45, 0.1);
+}
+
+.tel-number {
+  display: block;
+  margin-bottom: 35px;
+  color: rgba(22, 139, 155, 0.25);
+  font-size: 42px;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.tel-hiring-item h3 {
+  margin: 0 0 12px;
+  color: #20363e;
+  font-size: 18px;
+}
+
+.tel-hiring-item p {
+  margin: 0;
+  color: #71878d;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* =========================================================
+   PROCESS
+========================================================= */
+
+.tel-process {
+  padding: 110px 7%;
+  background: #ffffff;
+}
+
+.tel-process-list {
+  max-width: 1100px;
+  margin: 65px auto 0;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0;
+  position: relative;
+}
+
+.tel-process-list::before {
+  content: "";
+  position: absolute;
+  top: 28px;
+  left: 10%;
+  right: 10%;
+  height: 1px;
+  background: rgba(22, 139, 155, 0.2);
+}
+
+.tel-process-item {
+  position: relative;
+  z-index: 2;
+  padding: 0 15px;
+  text-align: center;
+}
+
+.tel-process-number {
+  width: 58px;
+  height: 58px;
+  margin: 0 auto 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  color: #ffffff;
+  background: #168b9b;
+
+  font-size: 15px;
+  font-weight: 800;
+
+  box-shadow:
+    0 0 0 8px rgba(22, 139, 155, 0.06);
+}
+
+.tel-process-item h3 {
+  margin: 0 0 10px;
+  color: #20363e;
+  font-size: 17px;
+}
+
+.tel-process-item p {
+  margin: 0;
+  color: #71878d;
+  font-size: 13px;
+  line-height: 1.65;
+}
+
+/* =========================================================
+   WHY PEAKLINK
+========================================================= */
+
+.tel-why {
+  padding: 110px 7%;
+
+  background:
+    linear-gradient(
+      145deg,
+      #f0f9fa,
+      #e5f5f7
+    );
+}
+
+.tel-why-content {
+  max-width: 1250px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.tel-why-content > div:first-child p {
+  margin-top: 25px;
+  color: #60777e;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.tel-reasons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.tel-reason {
+  padding: 25px;
+  border-radius: 10px;
+
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid rgba(22, 139, 155, 0.12);
+
+  box-shadow:
+    0 6px 20px rgba(16, 37, 45, 0.04);
+
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.tel-reason:hover {
+  transform: translateY(-5px);
+  border-color: rgba(22, 139, 155, 0.38);
+
+  box-shadow:
+    0 14px 30px rgba(16, 37, 45, 0.09);
+}
+
+.tel-reason span {
+  display: block;
+  margin-bottom: 12px;
+  color: #168b9b;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.tel-reason h3 {
+  margin: 0 0 8px;
+  color: #20363e;
+  font-size: 17px;
+}
+
+.tel-reason p {
+  margin: 0;
+  color: #71878d;
+  font-size: 13px;
+  line-height: 1.65;
+}
+
+/* =========================================================
+   CTA
+========================================================= */
+
+.tel-cta {
+  padding: 100px 7%;
+
+  background:
+    radial-gradient(
+      circle at center,
+      rgba(85, 215, 232, 0.1),
+      transparent 45%
+    ),
+    #ffffff;
+}
+
+.tel-cta-content {
+  max-width: 1000px;
+  margin: auto;
+  padding: 65px 55px;
+  text-align: center;
+  border-radius: 18px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #eef9fa,
+      #ffffff
+    );
+
+  border: 1px solid rgba(22, 139, 155, 0.18);
+
+  box-shadow:
+    0 30px 70px rgba(16, 37, 45, 0.1);
+}
+
+.tel-cta-content h2 {
+  margin: 0 auto 18px;
+  max-width: 750px;
+  color: #10252d;
+  font-size: clamp(30px, 4vw, 46px);
+  line-height: 1.2;
+}
+
+.tel-cta-content p {
+  max-width: 650px;
+  margin: 0 auto;
+  color: #60777e;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.tel-cta-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 30px;
+}
+
+/* =========================================================
+   ANIMATIONS
+========================================================= */
+
+@keyframes telHeroText {
+  from {
+    opacity: 0;
+    transform: translateX(-35px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes telHeroVisual {
+  from {
+    opacity: 0;
+    transform: translateX(35px) scale(0.94);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+@keyframes telRingPulse {
+  0%,
+  100% {
+    opacity: 0.35;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 0.75;
+    transform: scale(1.035);
+  }
+}
+
+@keyframes telNodePulse {
+  0%,
+  100% {
+    box-shadow:
+      0 0 15px rgba(22, 139, 155, 0.08);
+  }
+
+  50% {
+    box-shadow:
+      0 0 25px rgba(22, 139, 155, 0.2);
+  }
+}
+
+@keyframes telFloat {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-9px);
+  }
+}
+
+/* =========================================================
+   LARGE TABLETS
+========================================================= */
+
+@media (max-width: 1100px) {
+  .tel-hero {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .tel-hero-content {
+    width: 55%;
+  }
+
+  .tel-hero-visual {
+    right: 2%;
+    width: 45%;
+    transform: scale(0.85);
+  }
+
+  .tel-capabilities,
+  .tel-talent,
+  .tel-hiring,
+  .tel-process,
+  .tel-why,
+  .tel-intro,
+  .tel-cta {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .tel-capability-grid {
+    gap: 16px;
+  }
+
+  .tel-hiring-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .tel-why-content {
+    gap: 45px;
+  }
+}
+
+/* =========================================================
+   TABLETS
+========================================================= */
+
+@media (max-width: 850px) {
+  .tel-hero {
+    min-height: auto;
+    padding-top: 100px;
+    padding-bottom: 80px;
+    display: block;
+  }
+
+  .tel-hero-content {
+    width: 100%;
+    max-width: 700px;
+  }
+
+  .tel-hero h1 {
+    font-size: clamp(40px, 8vw, 60px);
+  }
+
+  .tel-hero-visual {
+    position: relative;
+    right: auto;
+    width: 100%;
+    height: 440px;
+    margin-top: 40px;
+    transform: scale(0.9);
+  }
+
+  .tel-intro-grid {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+  .tel-capability-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .tel-talent-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .tel-process-list {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .tel-process-list::before {
+    top: 25px;
+    bottom: 25px;
+    left: 50%;
+    right: auto;
+    width: 1px;
+    height: auto;
+  }
+
+  .tel-process-item {
+    display: grid;
+    grid-template-columns: 58px 1fr;
+    gap: 25px;
+    align-items: center;
+    text-align: left;
+  }
+
+  .tel-process-number {
+    margin: 0;
+  }
+
+  .tel-why-content {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+  .tel-hero {
+    padding: 80px 6% 65px;
+  }
+
+  .tel-hero h1 {
+    font-size: 40px;
+    letter-spacing: -0.8px;
+  }
+
+  .tel-hero p {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .tel-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .tel-primary-btn,
+  .tel-secondary-btn {
+    width: 100%;
+  }
+
+  .tel-hero-visual {
+    height: 360px;
+    margin-top: 20px;
+    transform: scale(0.72);
+    transform-origin: center;
+  }
+
+  .tel-network {
+    width: 390px;
+    height: 390px;
+  }
+
+  .tel-card-top {
+    right: 5px;
+  }
+
+  .tel-card-right {
+    right: -25px;
+  }
+
+  .tel-card-bottom {
+    left: 10px;
+  }
+
+  .tel-intro,
+  .tel-capabilities,
+  .tel-talent,
+  .tel-hiring,
+  .tel-process,
+  .tel-why,
+  .tel-cta {
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+
+  .tel-capability-grid,
+  .tel-talent-grid,
+  .tel-hiring-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tel-section-heading {
+    font-size: 32px;
+  }
+
+  .tel-capability-card {
+    min-height: auto;
+  }
+
+  .tel-hiring-item {
+    min-height: auto;
+  }
+
+  .tel-reasons {
+    grid-template-columns: 1fr;
+  }
+
+  .tel-cta-content {
+    padding: 45px 25px;
+  }
+
+  .tel-cta-buttons {
+    flex-direction: column;
+  }
+
+  .tel-cta-buttons a {
+    width: 100%;
+  }
+}
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 380px) {
+  .tel-hero h1 {
+    font-size: 34px;
+  }
+
+  .tel-label {
+    font-size: 11px;
+    letter-spacing: 1.5px;
+  }
+
+  .tel-hero-visual {
+    height: 310px;
+    transform: scale(0.62);
+  }
+
+  .tel-floating-card {
+    padding: 10px 13px;
+    font-size: 10px;
+  }
+
+  .tel-stat-box {
+    padding: 35px 20px;
+  }
+
+  .tel-stat-box strong {
+    font-size: 44px;
+  }
+
+  .tel-process-item {
+    grid-template-columns: 50px 1fr;
+    gap: 18px;
+  }
+
+  .tel-process-number {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .tel-animate,
+  .tel-visible {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .tel-hero-content,
+  .tel-hero-visual,
+  .tel-network-ring,
+  .tel-node,
+  .tel-floating-card {
+    animation: none;
+  }
+
+  .tel-primary-btn,
+  .tel-secondary-btn,
+  .tel-capability-card,
+  .tel-talent-card,
+  .tel-hiring-item,
+  .tel-reason {
+    transition: none;
+  }
+}
