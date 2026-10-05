@@ -28,7 +28,7 @@ const Navbar = () => {
     <header className="navbar-wrapper">
       <nav className="navbar">
 
-        {/* LOGO */}
+       
         {/* LOGO */}
         <div className="logo">
           <NavLink to="/" onClick={closeMenu}>
@@ -52,9 +52,7 @@ const Navbar = () => {
         {/* NAVIGATION */}
         <ul className={`nav-menu ${mobileMenu ? "mobile-open" : ""}`}>
           <li>
-            <NavLink to="/" onClick={closeMenu}>
-              HOME
-            </NavLink>
+            <NavLink to="/" onClick={closeMenu}> HOME </NavLink>
           </li>
 
 
@@ -64,9 +62,19 @@ const Navbar = () => {
             onMouseEnter={() => setActiveDropdown("services")}
             onMouseLeave={() => setActiveDropdown(null)}
           >
-            <button onClick={() => toggleDropdown("services")}>
-              SERVICES  <span>v</span>
-            </button>
+
+            <NavLink
+              to="/services"
+              className="services-navlink"
+              onClick={(e) => {
+                e.stopPropagation();
+                toggleDropdown("services");
+              }}
+            >
+              SERVICES <span>v</span>
+            </NavLink>
+
+
 
             {activeDropdown === "services" && (
               <div className="mega-menu services-menu">
@@ -77,149 +85,52 @@ const Navbar = () => {
                     OUR OFFERINGS
                   </p>
 
-                  <h2>
-                    Capabilities for
-                    <br />
-                    a new beginning...
-                  </h2>
-
-                  <h3>
-                    EMPOWERED BY GROWTH
-                  </h3>
-
-                  <button className="touch-btn">
-                    GET IN TOUCH
-                  </button>
+                  <h2> Capabilities for<br /> a new beginning... </h2>
+                  <h3> EMPOWERED BY GROWTH </h3>
+                  <button className="touch-btn"> GET IN TOUCH </button>
                 </div>
 
                 {/* COLUMN 1 */}
                 <div className="mega-column">
                   <h4>CONSULTING</h4>
 
-                  <NavLink
-                    to="/staffing"
-                    onClick={closeMenu}
-                  >
-                    STAFFING
-                  </NavLink>
+                  <NavLink to="/staffing" onClick={closeMenu} > STAFFING </NavLink>
+                  <NavLink to="/resources" onClick={closeMenu} > RESOURCING </NavLink>
+                  <NavLink to="/payroll" onClick={closeMenu} >  PAYROLL </NavLink>
 
-                  <NavLink
-                    to="/staffing"
-                    onClick={closeMenu}
-                  >
-                    RESOURCING
-                  </NavLink>
+                  <h4 className="second-heading">  OUTSOURCING  </h4>
 
-                  <NavLink
-                    to="/staffing"
-                    onClick={closeMenu}
-                  >
-                    PAYROLL
-                  </NavLink>
-
-                  <h4 className="second-heading">
-                    OUTSOURCING
-                  </h4>
-
-                  <NavLink
-                    to="/staffing"
-                    onClick={closeMenu}
-                  >
-                    BPO
-                  </NavLink>
-
-                  <NavLink
-                    to="/staffing"
-                    onClick={closeMenu}
-                  >
-                    RPO
-                  </NavLink>
+                  <NavLink to="/staffing" onClick={closeMenu}  >  BPO  </NavLink>
+                  <NavLink to="/staffing" onClick={closeMenu} >  RPO  </NavLink>
                 </div>
 
                 {/* COLUMN 2 */}
                 <div className="mega-column">
-                  <h4>
-                    APPLICATION DEVELOPMENT
-                  </h4>
+                  <h4> APPLICATION DEVELOPMENT </h4>
 
-                  <NavLink
-                    to="/staffing"
-                    onClick={closeMenu}
-                  >
-                    ENTERPRISE APPS
-                  </NavLink>
+                  <NavLink to="/staffing" onClick={closeMenu} > ENTERPRISE APPS </NavLink>
+                  <NavLink to="/staffing" onClick={closeMenu} > MOBILITY </NavLink>
+                  <NavLink to="/staffing" onClick={closeMenu}  >  E COMMERCE  </NavLink>
 
-                  <NavLink
-                    to="/staffing"
-                    onClick={closeMenu}
-                  >
-                    MOBILITY
-                  </NavLink>
+                  <h4 className="second-heading">  CLOUD TRANSFORMATION </h4>
 
-                  <NavLink
-                    to="/staffing"
-                    onClick={closeMenu}
-                  >
-                    E COMMERCE
-                  </NavLink>
-
-                  <h4 className="second-heading">
-                    CLOUD TRANSFORMATION
-                  </h4>
-
-                  <NavLink
-                    to="/staffing"
-                    onClick={closeMenu}
-                  >
-                    AWS
-                  </NavLink>
-
-                  <NavLink
-                    to="/staffing"
-                    onClick={closeMenu}
-                  >
-                    AZURE
-                  </NavLink>
+                  <NavLink to="/staffing" onClick={closeMenu}  >  AWS </NavLink>
+                  <NavLink to="/staffing" onClick={closeMenu}  >  AZURE  </NavLink>
                 </div>
 
                 {/* COLUMN 3 */}
                 <div className="mega-column">
                   <h4>AI & ANALYTICS</h4>
 
-                  <NavLink
-                    to="/staffing"
-                    onClick={closeMenu}
-                  >
-                    APPLIED AI
-                  </NavLink>  <NavLink
-                    to="/staffing"
-                    onClick={closeMenu}
-                  >
-                    MODELLING
-                  </NavLink>  <NavLink
-                    to="/staffing"
-                    onClick={closeMenu}
-                  >
-                    DATA ANALYTICS
-                  </NavLink>
+                  <NavLink to="/staffing" onClick={closeMenu}  >  APPLIED AI  </NavLink>
+                  <NavLink to="/staffing" onClick={closeMenu}  >  MODELLING </NavLink>
+                  <NavLink to="/staffing" onClick={closeMenu}  >  DATA ANALYTICS  </NavLink>
 
-                  <h4 className="second-heading">
-                    SECURITY
-                  </h4>
-                  <NavLink
-                    to="/staffing"
-                    onClick={closeMenu}
-                  >
-                  CYBERSECURITY
-                  </NavLink>
+                  <h4 className="second-heading">   SECURITY  </h4>
 
-                <NavLink
-                    to="/staffing"
-                    onClick={closeMenu}
-                  >
-                   QUALITY ASSURANCE
-                  </NavLink>
-                 
+                  <NavLink to="/staffing" onClick={closeMenu}  >  CYBERSECURITY  </NavLink>
+                  <NavLink to="/staffing" onClick={closeMenu}  >  QUALITY ASSURANCE  </NavLink>
+
                 </div>
 
               </div>
@@ -228,9 +139,7 @@ const Navbar = () => {
 
           {/* PLATFORM */}
           <li>
-            <NavLink to="/process" onClick={closeMenu}>
-              PROCESS
-            </NavLink>
+            <NavLink to="/process" onClick={closeMenu}> PROCESS </NavLink>
           </li>
 
           {/* INDUSTRIES */}

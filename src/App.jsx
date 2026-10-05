@@ -12,6 +12,9 @@ import Careers from "./pages/Careers";
 import Contact from "./pages/Contact";
 import Staffing from "./components/Staffing";
 
+import Payroll from "./components/Payroll";
+import Resources from "./components/Resources";
+
 function App() {
   return (
     <>
@@ -26,6 +29,9 @@ function App() {
         <Route path="/careers" element={<Careers />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/staffing" element={<Staffing />} />
+
+        <Route path="/payroll" element={<Payroll />} />
+         <Route path="/resources" element={<Resources />} />
       </Routes>
 
       <Footer />
