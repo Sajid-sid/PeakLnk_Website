@@ -269,7 +269,7 @@ const Healthcare = () => {
 
             <p>
               From technology and software development to data,
-              technical support and healthcare operations, PeakLink
+              technical support and healthcare operations, PeakLnk
               helps organizations build capable teams aligned with
               their business requirements.
             </p>

@@ -45,7 +45,7 @@ function Home() {
 
                         <img
                             src={images[current]}
-                            alt="PeakLink Technologies"
+                            alt="PeakLnk Technologies"
                             className="slider-image"
                         />
 
@@ -54,7 +54,7 @@ function Home() {
                         <div className="hero-content">
 
                             <p className="hero-small-title">
-                                PEAKLINK TECHNOLOGIES
+                                PEAKLNK TECHNOLOGIES
                             </p>
 
                             <h1>
@@ -65,7 +65,7 @@ function Home() {
                             </h1>
 
                             <p className="hero-description">
-                                PeakLink Technologies delivers recruitment,
+                                PeakLnk Technologies delivers recruitment,
                                 staffing and technology solutions that help
                                 organizations find the right people,
                                 strengthen their teams and move business
@@ -183,7 +183,7 @@ function Home() {
                         </h2>
 
                         <p>
-                            PeakLink Technologies Pvt Ltd is a people
+                            PeakLnk Technologies Pvt Ltd is a people
                             and technology solutions company focused on
                             helping organizations solve their workforce
                             and technology needs.
@@ -390,7 +390,7 @@ function Home() {
             </section>
 
 
-            {/* ================= WHY PEAKLINK ================= */}
+            {/* ================= WHY PEAKLNK ================= */}
 
             <section className="why-section">
 
@@ -399,7 +399,7 @@ function Home() {
                     <div className="why-heading">
 
                         <p className="section-label">
-                            WHY PEAKLINK
+                            WHY PEAKLNK
                         </p>
 
                         <h2>
@@ -637,7 +637,7 @@ function Home() {
                     </p>
 
                     <a
-                        href="mailto:info@peaklinktechnologies.com"
+                        href="mailto:info@peaklnktechnologies.com"
                         className="btn btn-primary"
                     >
                         Talk to Our Team

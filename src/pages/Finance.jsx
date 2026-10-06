@@ -320,7 +320,7 @@ const BankingFinancialServices = () => {
             <p>
               From fintech and banking technology to data,
               compliance, software development and IT support,
-              PeakLink helps financial organizations build
+              PeakLnk helps financial organizations build
               capable teams aligned with their business goals.
             </p>
 

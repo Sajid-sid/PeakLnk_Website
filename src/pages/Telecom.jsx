@@ -390,7 +390,7 @@ function Telecommunications() {
             </p>
 
             <p>
-              PeakLink helps telecom and connected technology organizations
+              PeakLnk helps telecom and connected technology organizations
               access professionals across network engineering, operations,
               software development, cloud infrastructure, technical support,
               and cybersecurity.
@@ -635,7 +635,7 @@ function Telecommunications() {
 
 
       {/* =====================================================
-          WHY PEAKLINK
+          WHY PEAKLNK
       ===================================================== */}
 
       <section className="tel-why">
@@ -645,7 +645,7 @@ function Telecommunications() {
           <div className="tel-animate">
 
             <span className="tel-section-label">
-              WHY PEAKLINK
+              WHY PEAKLNK
             </span>
 
             <h2>

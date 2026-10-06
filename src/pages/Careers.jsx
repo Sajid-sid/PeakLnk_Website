@@ -5,7 +5,7 @@ const jobs = [
     {
         id: 1,
         title: "Full Stack Developer",
-        company: "PeakLink Client",
+        company: "PeakLnk Client",
         location: "United States",
         type: "Contract",
         category: "Software Development",
@@ -14,7 +14,7 @@ const jobs = [
     {
         id: 2,
         title: "Cloud Engineer",
-        company: "PeakLink Client",
+        company: "PeakLnk Client",
         location: "United States",
         type: "Full Time",
         category: "Cloud & DevOps",
@@ -23,7 +23,7 @@ const jobs = [
     {
         id: 3,
         title: "Business Analyst",
-        company: "PeakLink Client",
+        company: "PeakLnk Client",
         location: "United States",
         type: "Contract",
         category: "Business & Consulting",
@@ -88,9 +88,9 @@ function Careers() {
 
         /*
           Replace this email with the actual confirmed
-          PeakLink support/recruitment email address.
+          PeakLnk support/recruitment email address.
         */
-        const companyEmail = "support@peaklinktechnologies.com";
+        const companyEmail = "support@peaklnktechnologies.com";
 
         const mailSubject = encodeURIComponent(
             formData.subject || "Career Support Enquiry"
@@ -128,7 +128,7 @@ ${formData.message}`
                     </h1>
 
                     <p>
-                        At PeakLink Technologies, we connect talented professionals
+                        At PeakLnk Technologies, we connect talented professionals
                         with career opportunities that match their skills, experience
                         and aspirations.
                     </p>
@@ -542,7 +542,7 @@ ${formData.message}`
                         </h2>
 
                         <p>
-                            Share your resume with PeakLink Technologies and our
+                            Share your resume with PeakLnk Technologies and our
                             recruitment team can connect with you when relevant
                             opportunities become available.
                         </p>
@@ -567,14 +567,14 @@ ${formData.message}`
             </section>
 
             {/* =========================
-          JOIN PEAKLINK
+          JOIN PEAKLNK
 ========================= */}
-            <section className="join-peaklink">
+            <section className="join-peaklnk">
 
                 <div className="section-container">
 
                     <span className="section-label">
-                        CAREERS AT PEAKLINK
+                        CAREERS AT PEAKLNK
                     </span>
 
                     <h2>
@@ -583,7 +583,7 @@ ${formData.message}`
                     </h2>
 
                     <p>
-                        Join PeakLink Technologies and be part of a team focused on
+                        Join PeakLnk Technologies and be part of a team focused on
                         connecting people, technology and opportunity.
                     </p>
 
@@ -600,11 +600,11 @@ ${formData.message}`
               setIsChatOpen(true);
               setFormData({
                 ...formData,
-                subject: "PeakLink Careers Enquiry",
+                subject: "PeakLnk Careers Enquiry",
               });
             }}
           >
-            View PeakLink Careers →
+            View PeakLnk Careers →
           </button> */}
 
                 </div>
@@ -626,7 +626,7 @@ ${formData.message}`
                                 </h3>
 
                                 <span>
-                                    PeakLink Support
+                                    PeakLnk Support
                                 </span>
                             </div>
 
@@ -652,7 +652,7 @@ ${formData.message}`
                                 <div className="message-content">
 
                                     <strong>
-                                        PeakLink Support
+                                        PeakLnk Support
                                     </strong>
 
                                     <p>
@@ -774,7 +774,7 @@ ${formData.message}`
                     className={`chat-floating-btn ${isChatOpen ? "active" : ""
                         }`}
                     onClick={() => setIsChatOpen(!isChatOpen)}
-                    aria-label="Chat with PeakLink Support"
+                    aria-label="Chat with PeakLnk Support"
                 >
 
                     {isChatOpen ? (

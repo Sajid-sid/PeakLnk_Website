@@ -368,7 +368,7 @@ function EngineeringManufacturing() {
             <p>
               Engineering and manufacturing businesses need people who
               understand technology, processes, safety, quality, and
-              operational efficiency. PeakLink helps organizations build
+              operational efficiency. PeakLnk helps organizations build
               teams across the complete industrial workforce ecosystem.
             </p>
 
@@ -611,7 +611,7 @@ function EngineeringManufacturing() {
 
 
       {/* =====================================================
-          WHY PEAKLINK
+          WHY PEAKLK
       ===================================================== */}
 
       <section className="em-why">
@@ -621,7 +621,7 @@ function EngineeringManufacturing() {
           <div className="em-animate">
 
             <span className="em-section-label">
-              WHY PEAKLINK
+              WHY PEAKLNK
             </span>
 
             <h2>

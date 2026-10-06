@@ -284,7 +284,7 @@ useEffect(() => {
 
 
       {/* =====================================================
-          WHY PEAKLINK
+          WHY PEAKLNK
       ===================================================== */}
 
       <section className="industries-why">
@@ -292,7 +292,7 @@ useEffect(() => {
         <div className="why-content">
 
           <span className="eyebrow">
-            WHY PEAKLINK
+            WHY PEAKLNK
           </span>
 
           <h2>

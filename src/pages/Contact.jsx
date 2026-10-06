@@ -30,7 +30,7 @@ const ContactUs = () => {
     {
       number: "04",
       title: "General Enquiry",
-      text: "Have a question or want to know more about PeakLink Technologies?"
+      text: "Have a question or want to know more about PeakLnk Technologies?"
     }
   ];
 
@@ -364,8 +364,8 @@ const ContactUs = () => {
                         EMAIL
                       </span>
 
-                      <a href="mailto:info@peaklinktechnologies.com">
-                        info@peaklinktechnologies.com
+                      <a href="mailto:info@peaklnktechnologies.com">
+                        info@peaklnktechnologies.com
                       </a>
                     </div>
 
@@ -415,7 +415,7 @@ const ContactUs = () => {
                 <div className="contact-info-bottom">
 
                   <span>
-                    PEAKLINK TECHNOLOGIES PVT LTD
+                    PEAKLNK TECHNOLOGIES PVT LTD
                   </span>
 
                   <p>
@@ -455,7 +455,7 @@ const ContactUs = () => {
 
             <p>
               Share your requirement with our team and let's explore
-              how PeakLink Technologies can support your business or
+              how PeakLnk Technologies can support your business or
               career goals.
             </p>
 

@@ -299,7 +299,7 @@ function EcommerceRetail() {
           </h1>
 
           <p>
-            PeakLink Technologies helps e-commerce and retail
+            PeakLnk Technologies helps e-commerce and retail
             organizations build capable teams across technology,
             digital commerce, product, operations, analytics,
             marketing, customer experience, and supply chain.
@@ -417,7 +417,7 @@ function EcommerceRetail() {
             </p>
 
             <p>
-              PeakLink helps organizations identify and
+              PeakLnk helps organizations identify and
               connect with talent across the complete digital
               commerce ecosystem.
             </p>
@@ -728,7 +728,7 @@ function EcommerceRetail() {
 
 
       {/* =========================================
-          WHY PEAKLINK
+          WHY PEAKLNK
       ========================================= */}
 
       <section className="er-why">
@@ -738,7 +738,7 @@ function EcommerceRetail() {
           <div className="er-section-heading er-animate">
 
             <span>
-              WHY PEAKLINK
+              WHY PEAKLNK
             </span>
 
             <h2>
@@ -819,7 +819,7 @@ function EcommerceRetail() {
             Whether you are launching a digital commerce
             platform, expanding your technology team,
             improving customer experience, or strengthening
-            your supply chain, PeakLink can help connect you
+            your supply chain, PeakLnk can help connect you
             with the right talent.
           </p>
 
@@ -832,7 +832,7 @@ function EcommerceRetail() {
             href="/contact"
             className="er-primary-btn"
           >
-            Talk to PeakLink →
+            Talk to PeakLnk →
           </a>
 
           <a

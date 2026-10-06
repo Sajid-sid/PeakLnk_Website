@@ -89,7 +89,7 @@ const AboutUs = () => {
             <section className="about-banner">
                 <img
                     src={aboutBanner}
-                    alt="About PeakLink Technologies"
+                    alt="About PeakLnk Technologies"
                     className="about-banner-image"
                 />
             </section>
@@ -114,7 +114,7 @@ const AboutUs = () => {
                             <div className="visual-content">
 
                                 <span className="visual-small-text">
-                                    PEAKLINK TECHNOLOGIES
+                                    PEAKLNK TECHNOLOGIES
                                 </span>
 
                                 <h3>
@@ -152,7 +152,7 @@ const AboutUs = () => {
 
                             <p className="intro-description">
                                 <strong>
-                                    PeakLink Technologies Pvt Ltd is a recruitment,
+                                    PeakLnk Technologies Pvt Ltd is a recruitment,
                                     staffing and technology solutions company committed
                                     to helping organizations access the people and
                                     expertise they need to grow.
@@ -180,7 +180,7 @@ const AboutUs = () => {
 
                                 <img
                                     src={RecruitmentSteps}
-                                    alt="PeakLink Recruitment Process"
+                                    alt="PeakLnk Recruitment Process"
                                 />
 
                             </div>
@@ -579,7 +579,7 @@ const AboutUs = () => {
 
                         <p>
                             Whether you are looking to build your team or
-                            explore your next career opportunity, PeakLink
+                            explore your next career opportunity, PeakLnk
                             Technologies is here to help.
                         </p>
 
