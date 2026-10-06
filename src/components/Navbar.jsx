@@ -190,13 +190,12 @@ const Navbar = () => {
                     INFORMATION TECHNOLOGY
                   </NavLink>
 
-                  <NavLink to="/industries" onClick={closeMenu}>
+                  <NavLink to="/healthcare" onClick={closeMenu}>
                     HEALTHCARE
                   </NavLink>
-                  <NavLink to="/industries" onClick={closeMenu}>
+                  <NavLink to="/financial" onClick={closeMenu}>
                     BANKING &amp; FINANCIAL SERVICES
                   </NavLink>
-
 
                 </div>
 

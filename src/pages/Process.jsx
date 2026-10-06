@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import "../styles/Process.css";
 
 const recruitmentSteps = [
@@ -47,6 +47,36 @@ const recruitmentSteps = [
 ];
 
 const Process = () => {
+  const processRef = useRef(null);
+
+  useEffect(() => {
+    const processItems =
+      processRef.current.querySelectorAll(".process-item");
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("process-show");
+          }
+        });
+      },
+      {
+        threshold: 0.2,
+      }
+    );
+
+    processItems.forEach((item) => {
+      observer.observe(item);
+    });
+
+    return () => {
+      processItems.forEach((item) => {
+        observer.unobserve(item);
+      });
+    };
+  }, []);
+
   return (
     <div className="process-page">
 
@@ -76,7 +106,7 @@ const Process = () => {
 
       <section className="recruitment-process">
 
-        <div className="process-wrapper">
+     <div className="process-wrapper" ref={processRef}>
 
           {recruitmentSteps.map((step, index) => (
 
@@ -92,10 +122,7 @@ const Process = () => {
                   {step.number}
                 </div>
 
-                {index !== recruitmentSteps.length - 1 && (
-                  <div className="process-vertical-line"></div>
-                )}
-
+               
               </div>
 
 

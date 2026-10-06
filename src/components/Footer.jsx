@@ -10,7 +10,7 @@ const Footer = () => {
         {/* Company Information */}
         <div className="footer-company">
 
-          <h2>PeakLink</h2>
+          <h2>PeakLnk</h2>
 
           <p className="footer-company-name">
             Technologies Pvt Ltd
@@ -23,28 +23,26 @@ const Footer = () => {
         </div>
 
 
-        {/* Quick Links */}
-        <div className="footer-column">
+        <div className="footer-column quick-links">
 
-          <h3>Quick Links</h3>
+  <h3>Quick Links</h3>
 
-          <a href="/">Home</a>
+  <div className="quick-links-grid">
+    <a href="/">Home</a>
+    <a href="/careers">Careers</a>
 
-          <a href="/about">About</a>
+    <a href="/about">About</a>
+    <a href="/jobs">Jobs</a>
 
-          <a href="/services">Services</a>
+    <a href="/services">Services</a>
+    <a href="/employers">Employers</a>
 
-          <a href="/industries">Industries</a>
+    <a href="/industries">Industries</a>
+    <a href="/contact">Contact</a>
+  </div>
 
-          <a href="/careers">Careers</a>
+</div>
 
-          <a href="/jobs">Jobs</a>
-
-          <a href="/employers">Employers</a>
-
-          <a href="/contact">Contact</a>
-
-        </div>
 
 
         {/* Legal */}
@@ -69,7 +67,7 @@ const Footer = () => {
       <div className="footer-bottom">
 
         <p>
-          Copyright © 2026 PeakLink Technologies Pvt Ltd.
+          Copyright © 2026 PeakLnk Technologies Pvt Ltd.
           All Rights Reserved.
         </p>
 

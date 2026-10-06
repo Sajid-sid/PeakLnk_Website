@@ -17,6 +17,11 @@ import Resources from "./components/Resources";
 import EcommerceRetail from "./pages/Ecommerce";
 import Engineering from "./pages/Engineering";
 import Telecom from "./pages/Telecom"
+import Healthcare from "./pages/Healthcare";
+import Finance from "./pages/Finance";
+
+
+
 function App() {
   return (
     <>
@@ -43,6 +48,8 @@ function App() {
   path="/telecommunications"
   element={<Telecom/>}
 />
+<Route path="/healthcare"element={<Healthcare />}/>
+        <Route path="financial"element={<Finance />}/>
       </Routes>
 
       <Footer />
