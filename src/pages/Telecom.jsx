@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import "./telecom.css";
+import "./Telecom.css";
 
 const capabilities = [
   {
@@ -390,7 +390,7 @@ function Telecommunications() {
             </p>
 
             <p>
-              PeakLnk helps telecom and connected technology organizations
+              PeakLink helps telecom and connected technology organizations
               access professionals across network engineering, operations,
               software development, cloud infrastructure, technical support,
               and cybersecurity.
@@ -635,7 +635,7 @@ function Telecommunications() {
 
 
       {/* =====================================================
-          WHY PEAKLNK
+          WHY PEAKLINK
       ===================================================== */}
 
       <section className="tel-why">
@@ -645,7 +645,7 @@ function Telecommunications() {
           <div className="tel-animate">
 
             <span className="tel-section-label">
-              WHY PEAKLNK
+              WHY PEAKLINK
             </span>
 
             <h2>
